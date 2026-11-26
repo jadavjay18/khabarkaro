@@ -4,7 +4,7 @@
 {% block description %}{{ p.summary }}{% endblock %}
 {% block canonical %}{{ p.url }}{% endblock %}
 {% block og_type %}article{% endblock %}
-{% block og_image %}{% if p.image %}<meta property="og:image" content="{{ p.image }}">{% endif %}{% endblock %}
+{% block og_image %}{% if p.share_image %}<meta property="og:image" content="{{ p.share_image }}"><meta name="twitter:image" content="{{ p.share_image }}">{% endif %}{% endblock %}
 {% block head_extra %}
 <script type="application/ld+json">{{ p.jsonld | safe }}</script>
 {% endblock %}
@@ -19,7 +19,14 @@
     <span class="who"><b>{{ p.author }}</b><span class="meta">{{ p.date_label }} · {{ p.read_min }} MIN READ</span></span>
     <a class="btn share" href="https://wa.me/?text={{ (p.title ~ ' ' ~ cfg.base_url ~ p.url) | urlencode }}" target="_blank" rel="noopener">Share on WhatsApp</a>
   </div>
-  {% if p.image %}<figure class="post-img" style="margin:0"><img src="{{ p.image }}" alt="{{ p.image_alt or p.title }}"></figure>{% endif %}
+  {% if p.image %}
+  <figure class="post-fig">
+    <div class="post-img"><img src="{{ p.image }}" alt="{{ p.image_alt or p.title }}"></div>
+    {% if p.image_credit %}<figcaption class="meta">Photo: <a href="{{ p.image_credit.url }}" target="_blank" rel="noopener nofollow">{{ p.image_credit.name }}</a> / {{ p.image_credit.site }} (representational image)</figcaption>{% endif %}
+  </figure>
+  {% elif p.card %}
+  <figure class="post-fig"><div class="post-img"><img src="{{ p.card }}" alt=""></div></figure>
+  {% endif %}
 
   {% if p.key_points %}
   <section class="keypoints">
