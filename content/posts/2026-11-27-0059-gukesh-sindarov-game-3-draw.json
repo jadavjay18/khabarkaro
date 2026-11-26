@@ -25,7 +25,18 @@
     "Hindustan Times",
     "India Today"
   ],
-  "products": [],
+  "products": [
+    {
+      "name": "ToyTastic Magnetic Educational Chess Board Set with Folding Chess Board",
+      "store": "Amazon",
+      "url": "https://www.amazon.in/dp/B09C5KK7CH?tag=jadavjay0f-21&linkCode=osi&th=1&psc=1",
+      "image": "https://m.media-amazon.com/images/I/51uJPo46WfL._SL500_.jpg",
+      "price": "289",
+      "mrp": "1,599",
+      "off": 82,
+      "asin": "B09C5KK7CH"
+    }
+  ],
   "sensitive": false,
   "generated_by": "gemini-3.5-flash-lite",
   "image_query": "chess board pieces match tournament",
