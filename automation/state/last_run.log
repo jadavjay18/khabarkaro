@@ -1,34 +1,38 @@
-00:43:38 feed ok   The Hindu (india): 40 recent items
-00:43:38 feed ok   Times of India (india): 37 recent items
-00:43:38 feed ok   Hindustan Times (india): 40 recent items
-00:43:38 feed ok   NDTV (india): 20 recent items
-00:43:39 feed ok   India Today (india): 40 recent items
-00:43:39 feed ok   BBC News (world): 20 recent items
-00:43:39 feed ok   The Hindu (world): 20 recent items
-00:43:39 feed ok   Al Jazeera (world): 25 recent items
-00:43:39 feed ok   Hindustan Times (world): 38 recent items
-00:43:40 feed ok   Gadgets 360 (tech): 23 recent items
-00:43:40 feed ok   The Hindu (tech): 2 recent items
-00:43:40 feed ok   Hindustan Times (tech): 1 recent items
-00:43:40 feed ok   Mint (tech): 6 recent items
-00:43:40 feed ok   Mint (business): 23 recent items
-00:43:40 feed ok   Economic Times (business): 33 recent items
-00:43:40 feed ok   The Hindu BusinessLine (business): 40 recent items
-00:43:41 feed FAIL Business Standard (business): 403 Client Error: Forbidden for url: https://www.business-standard.com/rss/home_page_top_stories.rss
-00:43:41 feed ok   ESPNcricinfo (sports): 16 recent items
-00:43:41 feed ok   The Hindu (sports): 22 recent items
-00:43:41 feed ok   Times of India (sports): 18 recent items
-00:43:41 feed ok   Hindustan Times (sports): 8 recent items
-00:43:42 feed ok   The Hindu (entertainment): 9 recent items
-00:43:42 feed ok   Hindustan Times (entertainment): 26 recent items
-00:43:42 feed ok   Hindustan Times (auto): 0 recent items
-00:43:42 feed ok   ET Auto (auto): 2 recent items
-00:43:43 feed ok   Hindustan Times (viral): 12 recent items
-00:43:43 feed ok   India Today (viral): 0 recent items
-00:43:43 collected 521 items from 27 feeds
-00:43:43   image: Unsplash photo for 'Indian Parliament building' by Zoshua Colah
-00:43:43 candidate (4 sources: Hindustan Times, India Today, Mint, The Hindu BusinessLine): Chennai industrialist donates 121 kg of gold ornaments worth ₹206 crore to Tirumala
-00:44:15 gemini gemini-3.8-flash attempt 1: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",     "status": "UNAVAILABLE"   } } 
-00:46:27   image: Unsplash photo for 'South Indian temple gopuram' by Aravind Thangaraj
-00:46:27   PUBLISHED: Chennai Ke Industrialist Ne Tirumala Mandir Ko Diya 121 Kg Gold, Value ₹206 Crore  -> 2026-11-27-0046-chennai-industrialist-donates-gold-tirupati-temple.json (products: 0, sensitive: False)
-00:46:27 done: 1 published, 1 tried
+00:56:15 feed ok   The Hindu (india): 40 recent items
+00:56:15 feed ok   Times of India (india): 36 recent items
+00:56:15 feed ok   Hindustan Times (india): 40 recent items
+00:56:15 feed ok   NDTV (india): 20 recent items
+00:56:15 feed ok   India Today (india): 40 recent items
+00:56:16 feed ok   BBC News (world): 19 recent items
+00:56:16 feed ok   The Hindu (world): 19 recent items
+00:56:16 feed ok   Al Jazeera (world): 25 recent items
+00:56:16 feed ok   Hindustan Times (world): 38 recent items
+00:56:16 feed ok   Gadgets 360 (tech): 23 recent items
+00:56:16 feed ok   The Hindu (tech): 2 recent items
+00:56:17 feed ok   Hindustan Times (tech): 1 recent items
+00:56:17 feed ok   Mint (tech): 4 recent items
+00:56:17 feed ok   Mint (business): 23 recent items
+00:56:17 feed ok   Economic Times (business): 33 recent items
+00:56:17 feed ok   The Hindu BusinessLine (business): 40 recent items
+00:56:17 feed FAIL Business Standard (business): 403 Client Error: Forbidden for url: https://www.business-standard.com/rss/home_page_top_stories.rss
+00:56:17 feed ok   ESPNcricinfo (sports): 15 recent items
+00:56:18 feed ok   The Hindu (sports): 22 recent items
+00:56:18 feed ok   Times of India (sports): 18 recent items
+00:56:18 feed ok   Hindustan Times (sports): 9 recent items
+00:56:19 feed ok   The Hindu (entertainment): 9 recent items
+00:56:19 feed ok   Hindustan Times (entertainment): 26 recent items
+00:56:19 feed ok   Hindustan Times (auto): 0 recent items
+00:56:19 feed ok   ET Auto (auto): 2 recent items
+00:56:19 feed ok   Hindustan Times (viral): 11 recent items
+00:56:19 feed ok   India Today (viral): 0 recent items
+00:56:19 collected 515 items from 27 feeds
+00:56:19 candidate (3 sources: Hindustan Times, India Today, The Hindu): Gukesh vs Sindarov Game 3 highlights: Longest match of the series so far ends in a draw
+00:56:26 gemini gemini-3.8-flash attempt 1: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",     "status": "UNAVAILABLE"   } } 
+00:57:03 gemini gemini-3.8-flash attempt 2: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",     "status": "UNAVAILABLE"   } } 
+00:57:48 gemini gemini-3.8-flash attempt 3: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",     "status": "UNAVAILABLE"   } } 
+00:58:15 gemini gemini-3.6-flash attempt 1: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",     "status": "UNAVAILABLE"   } } 
+00:58:38 gemini gemini-3.6-flash attempt 2: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",     "status": "UNAVAILABLE"   } } 
+00:59:20 gemini gemini-3.6-flash attempt 3: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",     "status": "UNAVAILABLE"   } } 
+00:59:27   image: Unsplash photo for 'chess board pieces match tournament' by Hassan Pasha
+00:59:27   PUBLISHED: World Chess Championship: Gukesh aur Sindarov ke beech Game 3 bhi draw  -> 2026-11-27-0059-gukesh-sindarov-game-3-draw.json (products: 0, sensitive: False)
+00:59:27 done: 1 published, 1 tried
