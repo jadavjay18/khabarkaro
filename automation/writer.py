@@ -34,7 +34,7 @@ Output sirf JSON, is shape mein:
   "product_keywords": ["0-3 Amazon India search phrases jo is khabar se seedhe jude ho, warna empty list"]
 }
 
-product_keywords rules: sirf tab do jab product reader ke liye naturally kaam ka ho (jaise phone launch -> wahi phone; cricket series -> cricket bat; budget/tax news -> personal finance book). Death, disaster, crime, war, accident wali khabar mein HAMESHA empty list aur "sensitive": true."""
+product_keywords rules: zyada-tar khabron mein 2-3 aise products do jo reader ko is khabar se naturally yaad aayein aur Amazon India par milte hon. Examples: phone launch -> wahi phone + phone cover; cricket/chess/sports -> us khel ka saaman (cricket bat, chess board set); budget/tax/market news -> personal finance books; travel/weather -> umbrella, travel bag; movie/OTT -> streaming device; car/bike launch -> car accessories, helmet; temple/festival -> pooja items. Brand ka naam tabhi do jab khabar usi brand ki ho. Sirf death, disaster, crime, war, accident, communal ya serious politics wali khabar mein empty list aur "sensitive": true."""
 
 
 def build_prompt(cluster, articles):
