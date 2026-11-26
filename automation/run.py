@@ -103,9 +103,8 @@ def main():
             post, model = writer.call_gemini(writer.build_prompt(c, articles), models, log)
         except Exception as e:
             log(f"  writer error: {e}")
-            if "GEMINI_API_KEY" in str(e):
-                break
-            continue
+            log("  Gemini unavailable — stopping this run; the story will be retried next run")
+            break
         err = writer.validate(post, categories)
         record = {"tok": sorted(c["tok"]), "links": [i["link"] for i in c["items"]]}
         if err:

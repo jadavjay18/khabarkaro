@@ -58,24 +58,34 @@ def call_gemini(prompt, models, log):
     }
     last_err = None
     for model in models:
-        for attempt in range(2):
+        for attempt in range(3):
             try:
-                r = requests.post(API.format(model=model), params={"key": key}, json=body, timeout=120)
-                if r.status_code == 429:
-                    log(f"gemini {model}: rate limited, waiting 30s")
-                    time.sleep(30)
-                    continue
-                if r.status_code == 404:
-                    log(f"gemini {model}: model not found, trying next")
-                    break
-                r.raise_for_status()
-                data = r.json()
-                text = data["candidates"][0]["content"]["parts"][0]["text"]
-                return json.loads(text), model
+                r = requests.post(API.format(model=model), headers={"x-goog-api-key": key}, json=body, timeout=120)
             except Exception as e:
                 last_err = e
-                log(f"gemini {model} attempt {attempt + 1} failed: {e}")
-                time.sleep(5)
+                log(f"gemini {model} attempt {attempt + 1}: network error {e}")
+                time.sleep(10)
+                continue
+            if r.status_code == 200:
+                try:
+                    data = r.json()
+                    text = data["candidates"][0]["content"]["parts"][0]["text"]
+                    return json.loads(text), model
+                except Exception as e:
+                    last_err = e
+                    log(f"gemini {model}: unreadable reply ({e}): {r.text[:300]}")
+                    break
+            detail = r.text[:400].replace("\n", " ")
+            last_err = f"{r.status_code} {detail}"
+            log(f"gemini {model} attempt {attempt + 1}: HTTP {r.status_code} {detail}")
+            if r.status_code in (400, 401, 403):
+                raise RuntimeError(f"Gemini rejected the request (check GEMINI_API_KEY): {last_err}")
+            if r.status_code == 404:
+                break  # model not available, try next
+            if r.status_code in (429, 500, 503, 504):
+                time.sleep([15, 40, 0][attempt])
+                continue
+            break
     raise RuntimeError(f"All Gemini models failed: {last_err}")
 
 
