@@ -67,7 +67,7 @@ def backfill_images():
         if safety.is_tragedy(p.get("title", "") + " " + " ".join(p.get("body", []))):
             continue
         photo = images.find_photo(p["image_query"], log)
-        if photo is None and not os.environ.get("PEXELS_API_KEY"):
+        if photo is None and not images.has_provider():
             return  # no key yet; try again next run
         if photo:
             p.update(photo)
@@ -75,7 +75,22 @@ def backfill_images():
         path.write_text(json.dumps(p, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
 
+def load_secrets():
+    """The workflow passes every repo secret as JSON (ALL_SECRETS), so a new
+    key added in GitHub settings works without editing the workflow."""
+    raw = os.environ.get("ALL_SECRETS", "")
+    if not raw:
+        return
+    try:
+        for k, v in json.loads(raw).items():
+            if k.isupper() and isinstance(v, str) and not os.environ.get(k):
+                os.environ[k] = v
+    except Exception:
+        log("could not read ALL_SECRETS")
+
+
 def main():
+    load_secrets()
     cfg = json.loads((ROOT / "config.json").read_text(encoding="utf-8"))
     auto = cfg.get("automation", {})
     if auto.get("paused"):
