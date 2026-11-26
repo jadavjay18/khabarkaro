@@ -22,7 +22,7 @@
   {% if p.image %}
   <figure class="post-fig">
     <div class="post-img"><img src="{{ p.image }}" alt="{{ p.image_alt or p.title }}"></div>
-    {% if p.image_credit %}<figcaption class="meta">Photo: <a href="{{ p.image_credit.url }}" target="_blank" rel="noopener nofollow">{{ p.image_credit.name }}</a> / {{ p.image_credit.site }} (representational image)</figcaption>{% endif %}
+    {% if p.image_credit %}<figcaption class="meta">Photo: <a href="{{ p.image_credit.url }}" target="_blank" rel="noopener nofollow">{{ p.image_credit.name }}</a> on <a href="{{ p.image_credit.site_url or p.image_credit.url }}" target="_blank" rel="noopener nofollow">{{ p.image_credit.site }}</a> (representational image)</figcaption>{% endif %}
   </figure>
   {% elif p.card %}
   <figure class="post-fig"><div class="post-img"><img src="{{ p.card }}" alt=""></div></figure>
