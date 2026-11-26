@@ -1,0 +1,79 @@
+{% extends "base.html" %}
+{% from "_macros.html" import promo %}
+{% block title %}{{ p.title }} | {{ cfg.site_name }}{% endblock %}
+{% block description %}{{ p.summary }}{% endblock %}
+{% block canonical %}{{ p.url }}{% endblock %}
+{% block og_type %}article{% endblock %}
+{% block og_image %}{% if p.image %}<meta property="og:image" content="{{ p.image }}">{% endif %}{% endblock %}
+{% block head_extra %}
+<script type="application/ld+json">{{ p.jsonld | safe }}</script>
+{% endblock %}
+{% block content %}
+<div class="post-layout">
+<article class="post">
+  <nav class="crumb meta" aria-label="Breadcrumb"><a href="{{ base }}/">Home</a> › <a class="cat" href="{{ base }}/category/{{ p.cat.slug }}/">{{ p.cat.name }}</a></nav>
+  <h1 class="hl">{{ p.title }}</h1>
+  {% if p.summary %}<p class="standfirst">{{ p.summary }}</p>{% endif %}
+  <div class="byline">
+    <span class="avatar" aria-hidden="true">KK</span>
+    <span class="who"><b>{{ p.author }}</b><span class="meta">{{ p.date_label }} · {{ p.read_min }} MIN READ</span></span>
+    <a class="btn share" href="https://wa.me/?text={{ (p.title ~ ' ' ~ cfg.base_url ~ p.url) | urlencode }}" target="_blank" rel="noopener">Share on WhatsApp</a>
+  </div>
+  {% if p.image %}<figure class="post-img" style="margin:0"><img src="{{ p.image }}" alt="{{ p.image_alt or p.title }}"></figure>{% endif %}
+
+  {% if p.key_points %}
+  <section class="keypoints">
+    <h2 class="chip">Key Points</h2>
+    <ul>{% for k in p.key_points %}<li>{{ k }}</li>{% endfor %}</ul>
+  </section>
+  {% endif %}
+
+  <div class="body">
+    {% for para in p.body %}<p>{{ para }}</p>{% endfor %}
+    {% if p.why_it_matters %}
+    <h2 class="hl">Yeh kyun zaroori hai?</h2>
+    <p>{{ p.why_it_matters }}</p>
+    {% endif %}
+  </div>
+
+  {% if p.products and not p.sensitive %}
+  <section class="products" aria-label="Recommended products">
+    <div class="sec-head"><h2 class="hl">Recommended for you</h2><span class="meta">Affiliate links</span></div>
+    <div class="prod-grid">
+      {% for pr in p.products %}
+      <div class="prod">
+        <div class="pimg">{% if pr.image %}<img src="{{ pr.image }}" alt="" loading="lazy">{% else %}<span class="meta">{{ pr.store }}</span>{% endif %}</div>
+        <span class="pname">{{ pr.name }}</span>
+        {% if pr.price %}<span class="price">₹{{ pr.price }} {% if pr.mrp %}<s>₹{{ pr.mrp }}</s>{% endif %}</span>{% endif %}
+        {% if pr.off %}<span class="off">{{ pr.off }}% off</span>{% endif %}
+        <a class="btn btn-accent" href="{{ pr.url }}" target="_blank" rel="sponsored noopener">{{ pr.store }} par dekho</a>
+      </div>
+      {% endfor %}
+    </div>
+  </section>
+  {% endif %}
+
+  {% if p.source %}
+  <p class="source meta">Source: <a href="{{ p.source.url }}" target="_blank" rel="noopener nofollow">{{ p.source.name }}</a>{% if p.products and not p.sensitive %} · {{ cfg.disclosure }}{% endif %}</p>
+  {% endif %}
+
+  {{ promo(cfg, title="Roz ki best deals miss mat karo", text="") }}
+</article>
+
+<aside class="sidebar">
+  {% if related %}
+  <div class="side-list">
+    <h2 class="chip">Aur Padho</h2>
+    {% for r in related %}
+    <a href="{{ base }}{{ r.url }}"><span class="t"><span>{{ r.title }}</span><span class="meta">{{ r.cat.name }} · {{ r.read_min }} min</span></span></a>
+    {% endfor %}
+  </div>
+  {% endif %}
+  <div class="deal-box">
+    <span class="chip">Aaj ki Deals</span>
+    <span style="font-weight:600;line-height:1.4">Amazon, Flipkart aur Myntra ki live deals roz {{ cfg.super_deals_india.name }} par.</span>
+    <a href="{{ cfg.super_deals_india.telegram }}" target="_blank" rel="noopener" style="font-weight:600;color:var(--accent)">Deals dekho →</a>
+  </div>
+</aside>
+</div>
+{% endblock %}
