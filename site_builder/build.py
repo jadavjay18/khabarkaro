@@ -17,6 +17,8 @@ from xml.sax.saxutils import escape
 
 from jinja2 import Environment, FileSystemLoader, select_autoescape
 
+from .cards import make_card
+
 ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / "_site"
 TEMPLATES = Path(__file__).resolve().parent / "templates"
@@ -83,8 +85,8 @@ def jsonld(p, cfg):
         "author": {"@type": "Organization", "name": p["author"]},
         "publisher": {"@type": "Organization", "name": cfg["site_name"]},
     }
-    if p.get("image"):
-        data["image"] = [p["image"]]
+    if p.get("share_image"):
+        data["image"] = [p["share_image"]]
     # escape "</" so the JSON can't close the <script> tag
     return json.dumps(data, ensure_ascii=False).replace("</", "<\\/")
 
@@ -105,6 +107,21 @@ def build():
     OUT.mkdir()
     shutil.copytree(ROOT / "assets", OUT / "assets")
     (OUT / ".nojekyll").write_text("")
+
+    # Headline cards: share image for every post, picture when no photo
+    for p in posts:
+        try:
+            make_card(p["title"], p["cat"]["name"], p["cat"]["color"], cfg["name_first"], cfg["name_second"],
+                      ROOT / ".card-cache" / f"{p['slug']}.png")
+            (OUT / "cards").mkdir(exist_ok=True)
+            shutil.copy(ROOT / ".card-cache" / f"{p['slug']}.png", OUT / "cards" / f"{p['slug']}.png")
+            card = f"{base}/cards/{p['slug']}.png"
+        except Exception as e:
+            print(f"card failed for {p['slug']}: {e}")
+            card = None
+        p["card"] = card
+        p["thumb"] = p.get("image") or card
+        p["share_image"] = p.get("image") or (cfg["base_url"] + f"/cards/{p['slug']}.png" if card else None)
 
     env = Environment(loader=FileSystemLoader(TEMPLATES), autoescape=select_autoescape(["html"]))
     common = dict(cfg=cfg, base=base, year=datetime.now().year, build_id=int(time.time()))
