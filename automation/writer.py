@@ -17,6 +17,7 @@ STRICT RULES:
 4. Tone neutral rakho. Koi political opinion, side lena, ya sensational/clickbait headline nahi.
 5. Agar source material kam hai, aapas mein contradict karta hai, ya story sensitive hai (communal, sexual violence, suicide, minors, ongoing court case ka faisla), to "skip": true do.
 6. Headline 70-100 characters, informative, clickbait nahi.
+7. Headline aur summary mein koi bhi aarop (blame) jise doosra paksh nakaar raha ho ya jo abhi saabit nahi hua, use FACT ki tarah mat likho. "X ne Y par aarop lagaya", "X ka daawa" jaisa attribution do, aur inkaar ho to woh bhi likho.
 
 Output sirf JSON, is shape mein:
 {
