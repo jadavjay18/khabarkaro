@@ -153,8 +153,8 @@ def main():
 
         sensitive = verdict == "sensitive" or bool(post.get("sensitive")) \
             or safety.classify(post["title"] + " " + " ".join(post["body"])) != "ok"
-        prods = [] if sensitive else products.amazon_search_products(
-            post.get("product_keywords", []), auto.get("amazon_tag", ""))
+        prods = [] if sensitive else products.amazon_products(
+            post.get("product_keywords", []), auto.get("amazon_tag", ""), log)
 
         now = datetime.now(IST)
         slug = unique_slug(writer.slugify(post.get("slug_en") or post["title"]))
