@@ -1,0 +1,5 @@
+{
+  "slug": "privacy-policy",
+  "title": "Privacy Policy",
+  "html": "<p>Yeh policy batati hai ki KhabarKaro (is website) par aapki jaankari kaise use hoti hai.</p>\n<h2 class=\"hl\">Hum kya collect karte hain</h2>\n<p>Hum aapse koi account ya personal jaankari nahi maangte. Website hosting provider (GitHub Pages) technical logs (jaise IP address aur browser type) rakh sakta hai.</p>\n<h2 class=\"hl\">Cookies aur third parties</h2>\n<p>Website Google Fonts use karti hai. Bhavishya mein hum analytics aur Google AdSense jaise advertising partners use kar sakte hain, jo cookies ke zariye aapki visits ke basis par ads dikha sakte hain. Aap apne browser settings se cookies band kar sakte hain, aur Google ki ad personalisation settings se personalised ads opt-out kar sakte hain.</p>\n<h2 class=\"hl\">Affiliate links</h2>\n<p>Kuch posts mein Amazon, Flipkart aur doosre stores ke affiliate links hote hain. Inpar click karke kharidne par hume chhota commission mil sakta hai; aapke liye kimat wahi rehti hai. Un websites ki apni privacy policies lagu hoti hain.</p>\n<h2 class=\"hl\">Sampark</h2>\n<p>Is policy ke baare mein sawaal ho to likhiye: {{contact_email}}</p>"
+}

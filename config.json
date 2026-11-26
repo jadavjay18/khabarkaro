@@ -1,0 +1,28 @@
+{
+  "site_name": "KhabarKaro",
+  "name_first": "Khabar",
+  "name_second": "Karo",
+  "tagline": "Trending khabar, seedhi bhasha mein.",
+  "description": "KhabarKaro par paao India aur duniya ki trending khabar — Tech, Business, Sports, Entertainment aur bahut kuch, aasaan Hinglish mein.",
+  "language": "hi-Latn",
+  "base_url": "https://jadavjay18.github.io/khabarkaro",
+  "base_path": "/khabarkaro",
+  "posts_per_category_section": 3,
+  "categories": [
+    {"slug": "india", "name": "India", "color": "#7C2D12"},
+    {"slug": "world", "name": "World", "color": "#1E3A8A"},
+    {"slug": "tech", "name": "Tech", "color": "#1F2937"},
+    {"slug": "business", "name": "Business", "color": "#065F46"},
+    {"slug": "sports", "name": "Sports", "color": "#9A3412"},
+    {"slug": "entertainment", "name": "Entertainment", "color": "#581C87"},
+    {"slug": "auto", "name": "Auto", "color": "#334155"},
+    {"slug": "viral", "name": "Viral", "color": "#9D174D"}
+  ],
+  "super_deals_india": {
+    "name": "Super Deals India",
+    "telegram": "https://t.me/FlipkartMeeshoMyntraAjio",
+    "whatsapp": "https://whatsapp.com/channel/0029Val7IHlAO7R92p4MWu3w"
+  },
+  "disclosure": "Kuch links affiliate links hain — inse kharidne par hume chhota commission mil sakta hai, aapko koi extra kharcha nahi.",
+  "contact_email": "[YOUR CONTACT EMAIL]"
+}
