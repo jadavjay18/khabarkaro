@@ -8,6 +8,7 @@ fails) it falls back to a tagged Amazon search link.
 import os
 import re
 import time
+from datetime import datetime, timedelta, timezone
 from urllib.parse import quote_plus
 
 import requests
@@ -75,7 +76,9 @@ def _search(keyword, tag, token, log):
         money = price.get("money") or {}
         basis = ((price.get("savingBasis") or {}).get("money") or {})
         pct = (price.get("savings") or {}).get("percentage")
+        now = datetime.now(timezone(timedelta(hours=5, minutes=30)))
         return {
+            "price_as_of": now.strftime("%d %b %Y, %I:%M %p IST"),
             "name": title[:120],
             "store": "Amazon",
             "url": url,
