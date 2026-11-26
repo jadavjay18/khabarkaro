@@ -2,13 +2,12 @@
 
 With Amazon Creators API credentials (secrets AMAZON_CLIENT_ID and
 AMAZON_CLIENT_SECRET) each product keyword becomes a real product card:
-title, image, price, discount, tagged link. Without them (or if the API
+title, image and tagged link (prices are intentionally not shown). Without them (or if the API
 fails) it falls back to a tagged Amazon search link.
 """
 import os
 import re
 import time
-from datetime import datetime, timedelta, timezone
 from urllib.parse import quote_plus
 
 import requests
@@ -17,7 +16,7 @@ SEARCH_URL = "https://creatorsapi.amazon/catalog/v1/searchItems"
 MARKETPLACE = "www.amazon.in"
 # India sits in the EU region (credential version 3.2); NA endpoint kept as a fallback.
 TOKEN_URLS = ["https://api.amazon.co.uk/auth/o2/token", "https://api.amazon.com/auth/o2/token"]
-RESOURCES = ["images.primary.large", "itemInfo.title", "offersV2.listings.price"]
+RESOURCES = ["images.primary.large", "itemInfo.title"]  # no prices shown on the site
 
 _token = {"value": None, "exp": 0}
 
@@ -71,21 +70,11 @@ def _search(keyword, tag, token, log):
         if not title or not url:
             continue
         img = (((it.get("images") or {}).get("primary") or {}).get("large") or {}).get("url")
-        listing = ((it.get("offersV2") or {}).get("listings") or [{}])[0] or {}
-        price = listing.get("price") or {}
-        money = price.get("money") or {}
-        basis = ((price.get("savingBasis") or {}).get("money") or {})
-        pct = (price.get("savings") or {}).get("percentage")
-        now = datetime.now(timezone(timedelta(hours=5, minutes=30)))
         return {
-            "price_as_of": now.strftime("%d %b %Y, %I:%M %p IST"),
             "name": title[:120],
             "store": "Amazon",
             "url": url,
             "image": img,
-            "price": _num(money.get("displayAmount")),
-            "mrp": _num(basis.get("displayAmount")),
-            "off": int(pct) if pct else None,
             "asin": it.get("asin"),
         }
     log(f"  amazon: no items for '{keyword}'")
@@ -106,7 +95,7 @@ def amazon_products(keywords, tag, log, limit=3):
     for kw in keywords:
         card = _search(kw, tag, token, log) if token else None
         if card:
-            log(f"  amazon: card for '{kw}': {card['name'][:50]} ({card.get('price')})")
+            log(f"  amazon: card for '{kw}': {card['name'][:60]}")
         out.append(card or search_link(kw, tag))
     return out
 
