@@ -1,6 +1,6 @@
 {% macro thumb(p, base) -%}
 <div class="thumb" style="background:{{ p.cat.color }}">
-  {% if p.image %}<img src="{{ p.image }}" alt="" loading="lazy">{% endif %}
+  {% if p.thumb %}<img src="{{ p.thumb }}" alt="" loading="lazy">{% endif %}
   <span class="chip">{{ p.cat.name }}</span>
 </div>
 {%- endmacro %}

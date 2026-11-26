@@ -34,3 +34,17 @@ def classify(text):
     if _match(SENSITIVE_PATTERNS, text):
         return "sensitive"
     return "ok"
+
+
+TRAGEDY_PATTERNS = [
+    r"\bdead\b", r"\bdies?\b", r"\bdied\b", r"\bdeath", r"\bkill(ed|s|ing)?\b", r"\bmurder", r"\bshot\b",
+    r"\baccident", r"\bcrash", r"\bcollapse", r"\bblast", r"\bexplosion", r"\bflood", r"\bearthquake",
+    r"\bcyclone", r"\blandslide", r"\btsunami", r"\bdisaster", r"\bwar\b", r"\battack", r"\bbomb",
+    r"\bhostage", r"\bkidnap", r"\bvictim", r"\binjur", r"\bfuneral", r"\bmourn", r"\btragedy",
+    r"\bpasse[sd] away", r"\bmaut\b", r"\bhaadsa", r"\bhadsa",
+]
+
+
+def is_tragedy(text):
+    """Deaths, disasters, violence: no stock photo, only the headline card."""
+    return _match(TRAGEDY_PATTERNS, text)
