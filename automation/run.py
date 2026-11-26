@@ -110,6 +110,7 @@ def main():
     backfill_images()
 
     published, tried = 0, 0
+    new_slugs = []
     for c in clusters:
         if published >= want or tried >= max_tries:
             break
@@ -185,10 +186,15 @@ def main():
         path.write_text(json.dumps(out, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
         seen.append({**record, "status": "published", "slug": slug})
         published += 1
+        new_slugs.append(slug)
         log(f"  PUBLISHED: {out['title']}  -> {path.name} (products: {len(prods)}, sensitive: {sensitive})")
 
     SEEN.write_text(json.dumps(seen[-1500:], ensure_ascii=False) + "\n", encoding="utf-8")
     log(f"done: {published} published, {tried} tried")
+    out_file = os.environ.get("GITHUB_OUTPUT")
+    if out_file:
+        with open(out_file, "a", encoding="utf-8") as f:
+            f.write(f"new_posts={' '.join(new_slugs)}\n")
     LOG.write_text("\n".join(_lines) + "\n", encoding="utf-8")
     return 0
 
