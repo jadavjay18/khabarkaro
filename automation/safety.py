@@ -18,7 +18,7 @@ SENSITIVE_PATTERNS = [
     r"\bflood", r"\bearthquake", r"\bcyclone", r"\blandslide", r"\btsunami", r"\bdisaster", r"\bwar\b",
     r"\battack", r"\bmissile", r"\bbomb", r"\bhostage", r"\bkidnap", r"\barrest", r"\bvictim",
     r"\binjur", r"\bfuneral", r"\bmourn", r"\btragedy", r"\bhospitali[sz]ed", r"\bpasses away",
-    r"\bpassed away", r"\bcourt\b", r"\bverdict", r"\bconvicted", r"\bfir\b", r"\bscam", r"\bfraud",
+    r"\bpassed away", r"\bcourt\b", r"\bverdict", r"\bconvicted", r"\bscam", r"\bfraud",
 ]
 
 
@@ -31,7 +31,7 @@ def classify(text):
     """Return 'skip', 'sensitive' or 'ok' for a story's combined text."""
     if _match(SKIP_PATTERNS, text):
         return "skip"
-    if _match(SENSITIVE_PATTERNS, text):
+    if _match(SENSITIVE_PATTERNS, text) or re.search(r"\bFIR\b", text):  # FIR case-sensitive: Hinglish "fir" = "then"
         return "sensitive"
     return "ok"
 

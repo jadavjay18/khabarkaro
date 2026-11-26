@@ -27,6 +27,7 @@
   "contact_email": "[YOUR CONTACT EMAIL]",
   "automation": {
     "paused": false,
+    "amazon_selftest": true,
     "posts_per_run": 1,
     "min_sources": 2,
     "max_age_hours": 12,

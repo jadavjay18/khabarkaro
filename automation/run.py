@@ -93,6 +93,12 @@ def main():
     load_secrets()
     cfg = json.loads((ROOT / "config.json").read_text(encoding="utf-8"))
     auto = cfg.get("automation", {})
+    if auto.get("amazon_selftest"):
+        log("AMAZON SELF-TEST (no news run)")
+        for p in products.amazon_products(["chess board set", "cricket bat"], auto.get("amazon_tag", ""), log):
+            log(f"  result: {p}")
+        LOG.write_text("\n".join(_lines) + "\n", encoding="utf-8")
+        return 0
     if auto.get("paused"):
         log("automation is PAUSED in config.json — nothing to do")
         return 0
