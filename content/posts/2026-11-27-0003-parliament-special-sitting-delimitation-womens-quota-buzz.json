@@ -30,5 +30,14 @@
   "products": [],
   "sensitive": true,
   "generated_by": "gemini-3.5-flash-lite",
-  "image_query": "Indian Parliament building"
+  "image_query": "Indian Parliament building",
+  "image": "https://images.unsplash.com/photo-1760872645518-8d0ee5ce9098?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTQ1ODkxfDB8MXxzZWFyY2h8MXx8SW5kaWFuJTIwUGFybGlhbWVudCUyMGJ1aWxkaW5nfGVufDF8MHx8fDE3OTU3MjA0MjN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+  "image_alt": "Grand historic building with dome and tower reflected in water",
+  "image_credit": {
+    "name": "Zoshua Colah",
+    "url": "https://unsplash.com/@zoshuacolah?utm_source=khabarkaro&utm_medium=referral",
+    "site": "Unsplash",
+    "site_url": "https://unsplash.com/?utm_source=khabarkaro&utm_medium=referral"
+  },
+  "image_checked": true
 }
