@@ -46,6 +46,7 @@
   {% if p.products and not p.sensitive %}
   <section class="products" aria-label="Recommended products">
     <div class="sec-head"><h2 class="hl">Recommended for you</h2><span class="meta">Affiliate links</span></div>
+    <p class="meta" style="margin:0">As an Amazon Associate we earn from qualifying purchases. Prices and availability are accurate as of the date/time shown and may change.</p>
     <div class="prod-grid">
       {% for pr in p.products %}
       <div class="prod">
@@ -53,6 +54,7 @@
         <span class="pname">{{ pr.name }}</span>
         {% if pr.price %}<span class="price">₹{{ pr.price }} {% if pr.mrp %}<s>₹{{ pr.mrp }}</s>{% endif %}</span>{% endif %}
         {% if pr.off %}<span class="off">{{ pr.off }}% off</span>{% endif %}
+        {% if pr.price and pr.price_as_of %}<span class="meta" style="font-size:11px">Price as of {{ pr.price_as_of }} — Amazon par badal sakta hai</span>{% endif %}
         <a class="btn btn-accent" href="{{ pr.url }}" target="_blank" rel="sponsored noopener">{{ pr.store }} par dekho</a>
       </div>
       {% endfor %}

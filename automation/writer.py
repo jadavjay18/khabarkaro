@@ -84,7 +84,10 @@ def call_gemini(prompt, models, log):
                 raise RuntimeError(f"Gemini rejected the request (check GEMINI_API_KEY): {last_err}")
             if r.status_code == 404:
                 break  # model not available, try next
-            if r.status_code in (429, 500, 503, 504):
+            if r.status_code == 429:
+                log(f"gemini {model}: quota/rate limit hit — switching to next model")
+                break
+            if r.status_code in (500, 503, 504):
                 time.sleep([15, 40, 0][attempt])
                 continue
             break
