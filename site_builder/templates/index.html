@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% from "_macros.html" import card, promo %}
+{% block ticker %}
+{% if trending %}
+<div class="ticker"><div class="wrap">
+  <span class="chip">Trending</span>
+  <div class="ticker-items">{% for p in trending %}<a href="{{ base }}{{ p.url }}">{{ p.title }}</a>{% endfor %}</div>
+</div></div>
+{% endif %}
+{% endblock %}
+{% block content %}
+{% if not featured %}
+<p class="empty">Pehli khabar jald aa rahi hai…</p>
+{% else %}
+<section class="hero">
+  {{ card(featured, base, big=True) }}
+  {% if trending %}
+  <aside class="side-list">
+    <h2 class="chip">Abhi Trending</h2>
+    {% for p in trending %}
+    <a href="{{ base }}{{ p.url }}"><span class="num">{{ loop.index }}</span><span class="t"><span>{{ p.title }}</span><span class="meta">{{ p.cat.name }} · {{ p.read_min }} min</span></span></a>
+    {% endfor %}
+  </aside>
+  {% endif %}
+</section>
+
+{% if latest %}
+<section>
+  <div class="sec-head"><h2 class="hl">Latest Khabar</h2></div>
+  <div class="grid">{% for p in latest %}{{ card(p, base) }}{% endfor %}</div>
+</section>
+{% endif %}
+{% endif %}
+
+{{ promo(cfg) }}
+
+{% if cat_sections %}
+<section class="cat-cols">
+  {% for s in cat_sections %}
+  <div class="cat-col">
+    <h2 class="chip">{{ s.cat.name }}</h2>
+    {% for p in s.posts %}<a href="{{ base }}{{ p.url }}">{{ p.title }}</a>{% endfor %}
+    <a href="{{ base }}/category/{{ s.cat.slug }}/" class="meta" style="font-family:var(--sans);color:var(--accent);border:0">Aur {{ s.cat.name }} khabar →</a>
+  </div>
+  {% endfor %}
+</section>
+{% endif %}
+{% endblock %}

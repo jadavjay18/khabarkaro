@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% from "_macros.html" import card, promo %}
+{% block title %}{{ cat.name }} News in Hinglish | {{ cfg.site_name }}{% endblock %}
+{% block description %}{{ cat.name }} ki latest aur trending khabar, aasaan Hinglish mein — {{ cfg.site_name }}.{% endblock %}
+{% block canonical %}/category/{{ cat.slug }}/{% endblock %}
+{% block content %}
+<section>
+  <div class="sec-head"><h1 class="hl" style="font-size:30px">{{ cat.name }}</h1><span class="meta">{{ posts|length }} stories</span></div>
+  {% if posts %}
+  <div class="grid">{% for p in posts %}{{ card(p, base) }}{% endfor %}</div>
+  {% else %}
+  <p class="empty">Is category mein khabar jald aa rahi hai…</p>
+  {% endif %}
+</section>
+{{ promo(cfg) }}
+{% endblock %}

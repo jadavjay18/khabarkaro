@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="{{ cfg.language }}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% block title %}{{ cfg.site_name }} — {{ cfg.tagline }}{% endblock %}</title>
+<meta name="description" content="{% block description %}{{ cfg.description }}{% endblock %}">
+<link rel="canonical" href="{{ cfg.base_url }}{% block canonical %}/{% endblock %}">
+<meta name="theme-color" content="#C2410C">
+<meta property="og:site_name" content="{{ cfg.site_name }}">
+<meta property="og:title" content="{{ self.title() }}">
+<meta property="og:description" content="{{ self.description() }}">
+<meta property="og:type" content="{% block og_type %}website{% endblock %}">
+<meta property="og:url" content="{{ cfg.base_url }}{{ self.canonical() }}">
+{% block og_image %}{% endblock %}
+<meta name="twitter:card" content="summary_large_image">
+<link rel="alternate" type="application/rss+xml" title="{{ cfg.site_name }}" href="{{ base }}/feed.xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,500;6..72,600;6..72,700&display=swap">
+<link rel="stylesheet" href="{{ base }}/assets/style.css?v={{ build_id }}">
+{% block head_extra %}{% endblock %}
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap">
+    <div class="head-row">
+      <a class="logo" href="{{ base }}/"><span>{{ cfg.name_first }}</span><span class="k2">{{ cfg.name_second }}</span></a>
+      <form class="search" action="{{ base }}/search/" role="search">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#6B7280" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+        <input type="search" name="q" placeholder="Khabar dhundo…" aria-label="Search news">
+      </form>
+      <a class="btn btn-accent" href="{{ cfg.super_deals_india.telegram }}" target="_blank" rel="noopener">Daily Deals →</a>
+    </div>
+    <nav class="cats" aria-label="Categories">
+      <a href="{{ base }}/" class="{% if active == 'home' %}on{% endif %}">Top Khabar</a>
+      {% for c in cfg.categories %}<a href="{{ base }}/category/{{ c.slug }}/" class="{% if active == c.slug %}on{% endif %}">{{ c.name }}</a>{% endfor %}
+    </nav>
+  </div>
+</header>
+{% block ticker %}{% endblock %}
+<main id="main" class="wrap">
+{% block content %}{% endblock %}
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div style="display:flex;flex-direction:column;gap:8px;max-width:340px">
+      <a class="logo" href="{{ base }}/"><span>{{ cfg.name_first }}</span><span class="k2">{{ cfg.name_second }}</span></a>
+      <span>{{ cfg.tagline }}</span>
+    </div>
+    <nav aria-label="Footer">
+      <a href="{{ base }}/about/">About</a>
+      <a href="{{ base }}/contact/">Contact</a>
+      <a href="{{ base }}/privacy-policy/">Privacy Policy</a>
+      <a href="{{ base }}/disclaimer/">Disclaimer</a>
+      <a href="{{ base }}/feed.xml">RSS</a>
+    </nav>
+  </div>
+  <div class="disc">{{ cfg.disclosure }} · © {{ year }} {{ cfg.site_name }}</div>
+</footer>
+<div class="joinbar" role="complementary" aria-label="Super Deals India">
+  <span>Roz ki best deals — {{ cfg.super_deals_india.name }}</span>
+  <a class="btn btn-white" href="{{ cfg.super_deals_india.telegram }}" target="_blank" rel="noopener">Telegram</a>
+  <a class="btn btn-ghost" href="{{ cfg.super_deals_india.whatsapp }}" target="_blank" rel="noopener">WhatsApp</a>
+</div>
+{% block scripts %}{% endblock %}
+</body>
+</html>

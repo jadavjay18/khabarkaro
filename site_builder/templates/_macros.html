@@ -1,0 +1,30 @@
+{% macro thumb(p, base) -%}
+<div class="thumb" style="background:{{ p.cat.color }}">
+  {% if p.image %}<img src="{{ p.image }}" alt="" loading="lazy">{% endif %}
+  <span class="chip">{{ p.cat.name }}</span>
+</div>
+{%- endmacro %}
+
+{% macro card(p, base, big=False) -%}
+<a class="card" href="{{ base }}{{ p.url }}">
+  {{ thumb(p, base) }}
+  <div class="card-body">
+    {% if big %}<h2 class="hl big">{{ p.title }}</h2><p>{{ p.summary }}</p>{% else %}<h3 class="hl">{{ p.title }}</h3>{% endif %}
+    <span class="meta">{{ p.date_label }} · {{ p.read_min }} MIN READ</span>
+  </div>
+</a>
+{%- endmacro %}
+
+{% macro promo(cfg, title="Har din ki best deals — seedha aapke phone par", text="Amazon, Flipkart, Myntra, AJIO aur Meesho ki top deals aur coupon codes. Free mein join karo.") -%}
+<section class="promo" aria-label="Super Deals India">
+  <div style="display:flex;flex-direction:column;gap:8px;flex:1 1 380px">
+    <span class="chip">Presented by {{ cfg.super_deals_india.name }}</span>
+    <h2 class="hl">{{ title }}</h2>
+    {% if text %}<p>{{ text }}</p>{% endif %}
+  </div>
+  <div class="promo-btns">
+    <a class="btn btn-white" href="{{ cfg.super_deals_india.telegram }}" target="_blank" rel="noopener">Join Telegram</a>
+    <a class="btn btn-ghost" href="{{ cfg.super_deals_india.whatsapp }}" target="_blank" rel="noopener">Join WhatsApp</a>
+  </div>
+</section>
+{%- endmacro %}
