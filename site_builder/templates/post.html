@@ -54,7 +54,7 @@
   {% endif %}
 
   {% if p.source %}
-  <p class="source meta">Source: <a href="{{ p.source.url }}" target="_blank" rel="noopener nofollow">{{ p.source.name }}</a>{% if p.products and not p.sensitive %} · {{ cfg.disclosure }}{% endif %}</p>
+  <p class="source meta">Source: <a href="{{ p.source.url }}" target="_blank" rel="noopener nofollow">{{ p.source.name }}</a>{% if p.also_reported_by %} · Also reported by: {{ p.also_reported_by | join(', ') }}{% endif %}{% if p.products and not p.sensitive %} · {{ cfg.disclosure }}{% endif %}</p>
   {% endif %}
 
   {{ promo(cfg, title="Roz ki best deals miss mat karo", text="") }}

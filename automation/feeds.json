@@ -1,0 +1,42 @@
+{
+  "_note": "RSS feeds the collector reads. 'category' is a hint; Gemini picks the final category. A feed that fails is skipped and logged.",
+  "feeds": [
+    {"source": "The Hindu", "category": "india", "url": "https://www.thehindu.com/news/national/feeder/default.rss"},
+    {"source": "Indian Express", "category": "india", "url": "https://indianexpress.com/section/india/feed/"},
+    {"source": "Times of India", "category": "india", "url": "https://timesofindia.indiatimes.com/rssfeedstopstories.cms"},
+    {"source": "Hindustan Times", "category": "india", "url": "https://www.hindustantimes.com/feeds/rss/india-news/rssfeed.xml"},
+    {"source": "NDTV", "category": "india", "url": "https://feeds.feedburner.com/ndtvnews-top-stories"},
+    {"source": "India Today", "category": "india", "url": "https://www.indiatoday.in/rss/home"},
+
+    {"source": "BBC News", "category": "world", "url": "https://feeds.bbci.co.uk/news/world/rss.xml"},
+    {"source": "The Hindu", "category": "world", "url": "https://www.thehindu.com/news/international/feeder/default.rss"},
+    {"source": "Indian Express", "category": "world", "url": "https://indianexpress.com/section/world/feed/"},
+    {"source": "Al Jazeera", "category": "world", "url": "https://www.aljazeera.com/xml/rss/all.xml"},
+
+    {"source": "Gadgets 360", "category": "tech", "url": "https://feeds.feedburner.com/gadgets360-latest"},
+    {"source": "Indian Express", "category": "tech", "url": "https://indianexpress.com/section/technology/feed/"},
+    {"source": "The Hindu", "category": "tech", "url": "https://www.thehindu.com/sci-tech/technology/feeder/default.rss"},
+    {"source": "Times of India", "category": "tech", "url": "https://timesofindia.indiatimes.com/rssfeeds/66949542.cms"},
+
+    {"source": "Mint", "category": "business", "url": "https://www.livemint.com/rss/news"},
+    {"source": "Economic Times", "category": "business", "url": "https://economictimes.indiatimes.com/rssfeedstopstories.cms"},
+    {"source": "The Hindu BusinessLine", "category": "business", "url": "https://www.thehindubusinessline.com/feeder/default.rss"},
+    {"source": "Indian Express", "category": "business", "url": "https://indianexpress.com/section/business/feed/"},
+
+    {"source": "ESPNcricinfo", "category": "sports", "url": "https://www.espncricinfo.com/rss/content/story/feeds/0.xml"},
+    {"source": "Indian Express", "category": "sports", "url": "https://indianexpress.com/section/sports/feed/"},
+    {"source": "The Hindu", "category": "sports", "url": "https://www.thehindu.com/sport/feeder/default.rss"},
+    {"source": "Times of India", "category": "sports", "url": "https://timesofindia.indiatimes.com/rssfeeds/4719148.cms"},
+
+    {"source": "Indian Express", "category": "entertainment", "url": "https://indianexpress.com/section/entertainment/feed/"},
+    {"source": "The Hindu", "category": "entertainment", "url": "https://www.thehindu.com/entertainment/feeder/default.rss"},
+    {"source": "Hindustan Times", "category": "entertainment", "url": "https://www.hindustantimes.com/feeds/rss/entertainment/rssfeed.xml"},
+
+    {"source": "Autocar India", "category": "auto", "url": "https://www.autocarindia.com/rss/all"},
+    {"source": "Indian Express", "category": "auto", "url": "https://indianexpress.com/section/auto/feed/"},
+    {"source": "Times of India", "category": "auto", "url": "https://timesofindia.indiatimes.com/rssfeeds/74317216.cms"},
+
+    {"source": "Indian Express", "category": "viral", "url": "https://indianexpress.com/section/trending/feed/"},
+    {"source": "Hindustan Times", "category": "viral", "url": "https://www.hindustantimes.com/feeds/rss/trending/rssfeed.xml"}
+  ]
+}

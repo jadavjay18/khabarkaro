@@ -24,5 +24,15 @@
     "whatsapp": "https://whatsapp.com/channel/0029Val7IHlAO7R92p4MWu3w"
   },
   "disclosure": "Kuch links affiliate links hain — inse kharidne par hume chhota commission mil sakta hai, aapko koi extra kharcha nahi.",
-  "contact_email": "[YOUR CONTACT EMAIL]"
+  "contact_email": "[YOUR CONTACT EMAIL]",
+  "automation": {
+    "paused": false,
+    "posts_per_run": 1,
+    "min_sources": 2,
+    "max_age_hours": 12,
+    "max_candidates_per_run": 6,
+    "min_source_chars": 700,
+    "gemini_models": ["gemini-3.8-flash", "gemini-flash-latest"],
+    "amazon_tag": "jadavjay0f-21"
+  }
 }
