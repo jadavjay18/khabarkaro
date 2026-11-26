@@ -1,38 +1,38 @@
-01:47:57 feed ok   The Hindu (india): 40 recent items
-01:47:57 feed ok   Times of India (india): 38 recent items
-01:47:57 feed ok   Hindustan Times (india): 40 recent items
-01:47:58 feed ok   NDTV (india): 20 recent items
-01:47:58 feed ok   India Today (india): 39 recent items
-01:47:58 feed ok   BBC News (world): 17 recent items
-01:47:58 feed ok   The Hindu (world): 15 recent items
-01:47:58 feed ok   Al Jazeera (world): 25 recent items
-01:47:58 feed ok   Hindustan Times (world): 32 recent items
-01:47:58 feed ok   Gadgets 360 (tech): 17 recent items
-01:47:59 feed ok   The Hindu (tech): 2 recent items
-01:47:59 feed ok   Hindustan Times (tech): 1 recent items
-01:47:59 feed ok   Mint (tech): 4 recent items
-01:47:59 feed ok   Mint (business): 22 recent items
-01:47:59 feed ok   Economic Times (business): 32 recent items
-01:47:59 feed ok   The Hindu BusinessLine (business): 40 recent items
-01:48:00 feed FAIL Business Standard (business): 403 Client Error: Forbidden for url: https://www.business-standard.com/rss/home_page_top_stories.rss
-01:48:00 feed ok   ESPNcricinfo (sports): 12 recent items
-01:48:00 feed ok   The Hindu (sports): 21 recent items
-01:48:00 feed ok   Times of India (sports): 18 recent items
-01:48:00 feed ok   Hindustan Times (sports): 10 recent items
-01:48:01 feed ok   The Hindu (entertainment): 9 recent items
-01:48:01 feed ok   Hindustan Times (entertainment): 22 recent items
-01:48:02 feed ok   Hindustan Times (auto): 0 recent items
-01:48:02 feed ok   ET Auto (auto): 2 recent items
-01:48:02 feed ok   Hindustan Times (viral): 9 recent items
-01:48:02 feed ok   India Today (viral): 0 recent items
-01:48:02 collected 487 items from 27 feeds
-01:48:02 candidate (3 sources: Al Jazeera, BBC News, Hindustan Times): Two Italians killed in strike in Kuwait, as Iran denies responsibility
-01:48:16 gemini gemini-3.8-flash attempt 1: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",     "status": "UNAVAILABLE"   } } 
-01:50:31 gemini gemini-3.8-flash attempt 2: network error HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=120)
-01:52:25 gemini gemini-3.8-flash attempt 3: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",     "status": "UNAVAILABLE"   } } 
-01:52:30 gemini gemini-3.6-flash attempt 1: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",     "status": "UNAVAILABLE"   } } 
-01:54:45 gemini gemini-3.6-flash attempt 2: network error HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=120)
-01:55:03 gemini gemini-3.6-flash attempt 3: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",     "status": "UNAVAILABLE"   } } 
-01:55:06   image: tragedy-related story — headline card only
-01:55:06   PUBLISHED: Kuwait Drone Attack: Iran Ke Drone Hamle Me Do Italian Technicians Ki Maut  -> 2026-11-27-0155-italians-killed-kuwait-drone-attack.json (products: 0, sensitive: True)
-01:55:06 done: 1 published, 1 tried
+01:57:04 feed ok   The Hindu (india): 40 recent items
+01:57:04 feed ok   Times of India (india): 38 recent items
+01:57:04 feed ok   Hindustan Times (india): 40 recent items
+01:57:04 feed ok   NDTV (india): 20 recent items
+01:57:05 feed ok   India Today (india): 39 recent items
+01:57:05 feed ok   BBC News (world): 17 recent items
+01:57:05 feed ok   The Hindu (world): 14 recent items
+01:57:05 feed ok   Al Jazeera (world): 25 recent items
+01:57:06 feed ok   Hindustan Times (world): 29 recent items
+01:57:06 feed ok   Gadgets 360 (tech): 16 recent items
+01:57:06 feed ok   The Hindu (tech): 2 recent items
+01:57:06 feed ok   Hindustan Times (tech): 1 recent items
+01:57:07 feed ok   Mint (tech): 4 recent items
+01:57:07 feed ok   Mint (business): 22 recent items
+01:57:07 feed ok   Economic Times (business): 32 recent items
+01:57:07 feed ok   The Hindu BusinessLine (business): 40 recent items
+01:57:07 feed FAIL Business Standard (business): 403 Client Error: Forbidden for url: https://www.business-standard.com/rss/home_page_top_stories.rss
+01:57:08 feed ok   ESPNcricinfo (sports): 12 recent items
+01:57:08 feed ok   The Hindu (sports): 21 recent items
+01:57:08 feed ok   Times of India (sports): 18 recent items
+01:57:08 feed ok   Hindustan Times (sports): 10 recent items
+01:57:08 feed ok   The Hindu (entertainment): 9 recent items
+01:57:08 feed ok   Hindustan Times (entertainment): 22 recent items
+01:57:08 feed ok   Hindustan Times (auto): 0 recent items
+01:57:08 feed ok   ET Auto (auto): 2 recent items
+01:57:08 feed ok   Hindustan Times (viral): 9 recent items
+01:57:09 feed ok   India Today (viral): 0 recent items
+01:57:09 collected 482 items from 27 feeds
+01:57:09 candidate (3 sources: India Today, Mint, The Hindu BusinessLine): Tamil Nadu CM Vijay announces 15 days paternity leave for male government employees — Here's when they can take it
+01:59:10 gemini gemini-3.8-flash attempt 1: network error HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=120)
+01:59:20 gemini gemini-3.8-flash attempt 2: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, mode
+02:00:09 gemini gemini-3.8-flash attempt 3: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",     "status": "UNAVAILABLE"   } } 
+02:02:10 gemini gemini-3.6-flash attempt 1: network error HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=120)
+02:04:20 gemini gemini-3.6-flash attempt 2: network error HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=120)
+02:04:37 gemini gemini-3.6-flash attempt 3: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",     "status": "UNAVAILABLE"   } } 
+02:04:41   image: Unsplash photo for 'government office building India' by Akshat Jhingran
+02:04:41   PUBLISHED: Tamil Nadu mein male government employees ke liye 15 din ki paternity leave ka ailan  -> 2026-11-27-0204-tamil-nadu-paternity-leave-government-employees.json (products: 0, sensitive: True)
+02:04:41 done: 1 published, 1 tried
