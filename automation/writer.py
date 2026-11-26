@@ -30,6 +30,7 @@ Output sirf JSON, is shape mein:
   "why_it_matters": "2-3 sentences: aam padhne wale par iska kya asar",
   "slug_en": "short-english-url-words-5-to-8",
   "sensitive": false,
+  "image_query": "2-5 English words: ek generic photo subject stock photo search ke liye (jagah, cheez ya scene), jaise 'Indian Parliament building', 'cricket stadium crowd', 'smartphone camera closeup'. Kisi asli insaan ka naam ya brand logo NAHI.",
   "product_keywords": ["0-3 Amazon India search phrases jo is khabar se seedhe jude ho, warna empty list"]
 }
 

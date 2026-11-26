@@ -1,17 +1,18 @@
 """KhabarKaro news automation — one run.
 
 collect trending stories -> safety check -> Gemini writes Hinglish post
--> add affiliate products -> save content/posts/*.json
+-> add affiliate products + photo -> save content/posts/*.json
 
 Run:  python -m automation.run
 Settings live in config.json under "automation".
 """
 import json
+import os
 import sys
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
-from . import collect, products, safety, writer
+from . import collect, images, products, safety, writer
 
 ROOT = Path(__file__).resolve().parent.parent
 POSTS = ROOT / "content" / "posts"
@@ -54,6 +55,26 @@ def unique_slug(base):
     return slug
 
 
+def backfill_images():
+    """Give older posts a photo once a Pexels key exists (one try per post)."""
+    for path in sorted(POSTS.glob("*.json")):
+        try:
+            p = json.loads(path.read_text(encoding="utf-8"))
+        except Exception:
+            continue
+        if p.get("image") or p.get("image_checked") or not p.get("image_query"):
+            continue
+        if safety.is_tragedy(p.get("title", "") + " " + " ".join(p.get("body", []))):
+            continue
+        photo = images.find_photo(p["image_query"], log)
+        if photo is None and not os.environ.get("PEXELS_API_KEY"):
+            return  # no key yet; try again next run
+        if photo:
+            p.update(photo)
+        p["image_checked"] = True
+        path.write_text(json.dumps(p, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+
+
 def main():
     cfg = json.loads((ROOT / "config.json").read_text(encoding="utf-8"))
     auto = cfg.get("automation", {})
@@ -70,6 +91,8 @@ def main():
     want = auto.get("posts_per_run", 1)
     max_tries = auto.get("max_candidates_per_run", 6)
     models = auto.get("gemini_models", ["gemini-3.8-flash", "gemini-flash-latest"])
+
+    backfill_images()
 
     published, tried = 0, 0
     for c in clusters:
@@ -134,7 +157,15 @@ def main():
             "products": prods,
             "sensitive": sensitive,
             "generated_by": model,
+            "image_query": (post.get("image_query") or "").strip()[:60],
         }
+        text_all = out["title"] + " " + " ".join(out["body"])
+        if not safety.is_tragedy(text_all):
+            photo = images.find_photo(out["image_query"], log)
+            if photo:
+                out.update(photo)
+        else:
+            log("  image: tragedy-related story — headline card only")
         path = POSTS / f"{now:%Y-%m-%d-%H%M}-{slug}.json"
         path.write_text(json.dumps(out, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
         seen.append({**record, "status": "published", "slug": slug})
