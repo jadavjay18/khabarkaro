@@ -1,5 +1,37 @@
-02:06:58 AMAZON SELF-TEST (no news run)
-02:06:59   amazon: card for 'chess board set': ToyTastic Magnetic Educational Chess Board Set wit (289)
-02:07:00   amazon: card for 'cricket bat': Jaspo SLOG Plastic Tennis Cricket Bat Full Size Ba (379)
-02:07:00   result: {'name': 'ToyTastic Magnetic Educational Chess Board Set with Folding Chess Board 2 Plyaers Travel Toys for Kids and Adults (10 In', 'store': 'Amazon', 'url': 'https://www.amazon.in/dp/B09C5KK7CH?tag=jadavjay0f-21&linkCode=osi&th=1&psc=1', 'image': 'https://m.media-amazon.com/images/I/51uJPo46WfL._SL500_.jpg', 'price': '289', 'mrp': '1,599', 'off': 82, 'asin': 'B09C5KK7CH'}
-02:07:00   result: {'name': 'Jaspo SLOG Plastic Tennis Cricket Bat Full Size Bat (34” X 4.5” inch) for All Age Group (SLOG Cricket BAT) (SLOG)', 'store': 'Amazon', 'url': 'https://www.amazon.in/dp/B09WVXMG96?tag=jadavjay0f-21&linkCode=osi&th=1&psc=1', 'image': 'https://m.media-amazon.com/images/I/41YqRWg9+4L._SL500_.jpg', 'price': '379', 'mrp': '1,199', 'off': 68, 'asin': 'B09WVXMG96'}
+12:34:12 feed ok   The Hindu (india): 40 recent items
+12:34:12 feed ok   Times of India (india): 37 recent items
+12:34:12 feed ok   Hindustan Times (india): 40 recent items
+12:34:12 feed ok   NDTV (india): 20 recent items
+12:34:12 feed ok   India Today (india): 33 recent items
+12:34:12 feed ok   BBC News (world): 12 recent items
+12:34:13 feed ok   The Hindu (world): 14 recent items
+12:34:13 feed ok   Al Jazeera (world): 25 recent items
+12:34:13 feed ok   Hindustan Times (world): 40 recent items
+12:34:13 feed ok   Gadgets 360 (tech): 5 recent items
+12:34:13 feed ok   The Hindu (tech): 10 recent items
+12:34:13 feed ok   Hindustan Times (tech): 0 recent items
+12:34:13 feed ok   Mint (tech): 5 recent items
+12:34:14 feed ok   Mint (business): 13 recent items
+12:34:14 feed ok   Economic Times (business): 32 recent items
+12:34:14 feed ok   The Hindu BusinessLine (business): 36 recent items
+12:34:14 feed FAIL Business Standard (business): 403 Client Error: Forbidden for url: https://www.business-standard.com/rss/home_page_top_stories.rss
+12:34:14 feed ok   ESPNcricinfo (sports): 4 recent items
+12:34:14 feed ok   The Hindu (sports): 7 recent items
+12:34:15 feed ok   Times of India (sports): 15 recent items
+12:34:15 feed ok   Hindustan Times (sports): 12 recent items
+12:34:15 feed ok   The Hindu (entertainment): 5 recent items
+12:34:15 feed ok   Hindustan Times (entertainment): 16 recent items
+12:34:16 feed ok   Hindustan Times (auto): 0 recent items
+12:34:16 feed ok   ET Auto (auto): 1 recent items
+12:34:16 feed ok   Hindustan Times (viral): 9 recent items
+12:34:17 feed ok   India Today (viral): 0 recent items
+12:34:17 collected 431 items from 27 feeds
+12:34:17 candidate (4 sources: Hindustan Times, NDTV, The Hindu, The Hindu BusinessLine): "India- US Trade Deal Close To Culmination": Minister Piyush Goyal
+12:36:17 gemini gemini-3.8-flash attempt 1: network error HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=120)
+12:36:28 gemini gemini-3.8-flash attempt 2: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",     "status": "UNAVAILABLE"   } } 
+12:37:20 gemini gemini-3.8-flash attempt 3: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",     "status": "UNAVAILABLE"   } } 
+12:37:29   amazon: card for 'personal finance books': World’S Greatest Books For Personal Growth & Wealth (4 Books
+12:37:29   amazon: card for 'business economics books': Business Economics B.Com I-Year I-Sem As Per the O.U CBCS (2
+12:37:30   image: Unsplash photo for 'shipping containers cargo port trade' by Ali Mkumbwa
+12:37:30   PUBLISHED: India-US Bilateral Trade Deal Final Stage Par Hai, Piyush Goyal Ka Bayan  -> 2026-11-27-1237-india-us-trade-deal-close-to-culmination-piyush-goyal.json (products: 2, sensitive: False)
+12:37:30 done: 1 published, 1 tried
