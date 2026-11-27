@@ -126,8 +126,10 @@ def main():
     if auto.get("paused"):
         log("automation is PAUSED in config.json — nothing to do")
         return 0
-    if os.environ.get("GITHUB_EVENT_NAME") == "schedule" and not post_is_due(auto):
-        return 0  # hourly wake-up, nothing due: exit without touching any files
+    event = os.environ.get("GITHUB_EVENT_NAME", "")
+    timed = event == "schedule" or (event == "workflow_dispatch" and os.environ.get("FORCE_RUN", "").lower() == "false")
+    if timed and not post_is_due(auto):
+        return 0  # timer wake-up (GitHub cron or external cron), nothing due: exit without touching files
 
     categories = {c["slug"] for c in cfg["categories"]}
     feeds = json.loads((ROOT / "automation" / "feeds.json").read_text(encoding="utf-8"))["feeds"]
