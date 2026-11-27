@@ -1,0 +1,93 @@
+name: Publish KhabarKaro
+
+on:
+  schedule:
+    # wakes up every hour; automation/run.py publishes only when a post is due
+    # (GitHub may delay or drop some scheduled runs, so hourly gives many chances)
+    - cron: "41 * * * *"
+  workflow_dispatch:
+    inputs:
+      force:
+        description: "Publish now even if a post is not due"
+        type: boolean
+        default: true
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: publish
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    outputs:
+      new_posts: ${{ steps.write.outputs.new_posts }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: Write new posts
+        id: write
+        if: github.event_name != 'push'
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          UNSPLASH_ACCESS_KEY: ${{ secrets.UNSPLASH_ACCESS_KEY }}
+          PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
+          AMAZON_CLIENT_ID: ${{ secrets.AMAZON_CLIENT_ID }}
+          AMAZON_CLIENT_SECRET: ${{ secrets.AMAZON_CLIENT_SECRET }}
+          FORCE_RUN: ${{ inputs.force }}
+        run: python -m automation.run
+      - name: Save new posts to the repo
+        if: github.event_name != 'push'
+        run: |
+          git config user.name "KhabarKaro Bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add content/posts automation/state
+          if ! git diff --cached --quiet; then
+            git commit -m "New posts $(date -u +%Y-%m-%d-%H%M)"
+            git pull --rebase
+            git push
+          fi
+      - run: python -m site_builder.build
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
+
+  notify:
+    needs: [build, deploy]
+    if: needs.build.outputs.new_posts != ''
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install requests
+      - name: Share new posts on Telegram
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          NEW_POSTS: ${{ needs.build.outputs.new_posts }}
+        run: |
+          sleep 30
+          python -m automation.notify
