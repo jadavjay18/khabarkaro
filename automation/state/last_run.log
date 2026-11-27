@@ -1,37 +1,35 @@
-12:34:12 feed ok   The Hindu (india): 40 recent items
-12:34:12 feed ok   Times of India (india): 37 recent items
-12:34:12 feed ok   Hindustan Times (india): 40 recent items
-12:34:12 feed ok   NDTV (india): 20 recent items
-12:34:12 feed ok   India Today (india): 33 recent items
-12:34:12 feed ok   BBC News (world): 12 recent items
-12:34:13 feed ok   The Hindu (world): 14 recent items
-12:34:13 feed ok   Al Jazeera (world): 25 recent items
-12:34:13 feed ok   Hindustan Times (world): 40 recent items
-12:34:13 feed ok   Gadgets 360 (tech): 5 recent items
-12:34:13 feed ok   The Hindu (tech): 10 recent items
-12:34:13 feed ok   Hindustan Times (tech): 0 recent items
-12:34:13 feed ok   Mint (tech): 5 recent items
-12:34:14 feed ok   Mint (business): 13 recent items
-12:34:14 feed ok   Economic Times (business): 32 recent items
-12:34:14 feed ok   The Hindu BusinessLine (business): 36 recent items
-12:34:14 feed FAIL Business Standard (business): 403 Client Error: Forbidden for url: https://www.business-standard.com/rss/home_page_top_stories.rss
-12:34:14 feed ok   ESPNcricinfo (sports): 4 recent items
-12:34:14 feed ok   The Hindu (sports): 7 recent items
-12:34:15 feed ok   Times of India (sports): 15 recent items
-12:34:15 feed ok   Hindustan Times (sports): 12 recent items
-12:34:15 feed ok   The Hindu (entertainment): 5 recent items
-12:34:15 feed ok   Hindustan Times (entertainment): 16 recent items
-12:34:16 feed ok   Hindustan Times (auto): 0 recent items
-12:34:16 feed ok   ET Auto (auto): 1 recent items
-12:34:16 feed ok   Hindustan Times (viral): 9 recent items
-12:34:17 feed ok   India Today (viral): 0 recent items
-12:34:17 collected 431 items from 27 feeds
-12:34:17 candidate (4 sources: Hindustan Times, NDTV, The Hindu, The Hindu BusinessLine): "India- US Trade Deal Close To Culmination": Minister Piyush Goyal
-12:36:17 gemini gemini-3.8-flash attempt 1: network error HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=120)
-12:36:28 gemini gemini-3.8-flash attempt 2: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",     "status": "UNAVAILABLE"   } } 
-12:37:20 gemini gemini-3.8-flash attempt 3: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",     "status": "UNAVAILABLE"   } } 
-12:37:29   amazon: card for 'personal finance books': World’S Greatest Books For Personal Growth & Wealth (4 Books
-12:37:29   amazon: card for 'business economics books': Business Economics B.Com I-Year I-Sem As Per the O.U CBCS (2
-12:37:30   image: Unsplash photo for 'shipping containers cargo port trade' by Ali Mkumbwa
-12:37:30   PUBLISHED: India-US Bilateral Trade Deal Final Stage Par Hai, Piyush Goyal Ka Bayan  -> 2026-11-27-1237-india-us-trade-deal-close-to-culmination-piyush-goyal.json (products: 2, sensitive: False)
-12:37:30 done: 1 published, 1 tried
+17:22:55 feed ok   The Hindu (india): 40 recent items
+17:22:55 feed ok   Times of India (india): 38 recent items
+17:22:55 feed ok   Hindustan Times (india): 40 recent items
+17:22:55 feed ok   NDTV (india): 20 recent items
+17:22:56 feed ok   India Today (india): 34 recent items
+17:22:56 feed ok   BBC News (world): 18 recent items
+17:22:56 feed ok   The Hindu (world): 17 recent items
+17:22:56 feed ok   Al Jazeera (world): 25 recent items
+17:22:56 feed ok   Hindustan Times (world): 40 recent items
+17:22:56 feed ok   Gadgets 360 (tech): 23 recent items
+17:22:57 feed ok   The Hindu (tech): 11 recent items
+17:22:57 feed ok   Hindustan Times (tech): 3 recent items
+17:22:57 feed ok   Mint (tech): 7 recent items
+17:22:57 feed ok   Mint (business): 22 recent items
+17:22:57 feed ok   Economic Times (business): 34 recent items
+17:22:57 feed ok   The Hindu BusinessLine (business): 40 recent items
+17:22:57 feed FAIL Business Standard (business): 403 Client Error: Forbidden for url: https://www.business-standard.com/rss/home_page_top_stories.rss
+17:22:58 feed ok   ESPNcricinfo (sports): 7 recent items
+17:22:58 feed ok   The Hindu (sports): 6 recent items
+17:22:58 feed ok   Times of India (sports): 17 recent items
+17:22:58 feed ok   Hindustan Times (sports): 7 recent items
+17:22:59 feed ok   The Hindu (entertainment): 13 recent items
+17:22:59 feed ok   Hindustan Times (entertainment): 34 recent items
+17:23:00 feed ok   Hindustan Times (auto): 0 recent items
+17:23:00 feed ok   ET Auto (auto): 1 recent items
+17:23:00 feed ok   Hindustan Times (viral): 14 recent items
+17:23:00 feed ok   India Today (viral): 0 recent items
+17:23:00 collected 511 items from 27 feeds
+17:23:01 candidate (5 sources: Hindustan Times, India Today, The Hindu, The Hindu BusinessLine, Times of India): Cabinet clears fresh women’s quota Bill; Lok Sabha seats to rise 50% across all States
+17:25:01 gemini gemini-3.8-flash attempt 1: network error HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=120)
+17:25:15 gemini gemini-3.8-flash attempt 2: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",     "status": "UNAVAILABLE"   } } 
+17:25:58 gemini gemini-3.8-flash attempt 3: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",     "status": "UNAVAILABLE"   } } 
+17:26:13   image: Unsplash photo for 'Indian Parliament building New Delhi' by Pixels Street
+17:26:13   PUBLISHED: Lok Sabha Seats Me 50% Badhotri Aur Women Quota Par Cabinet Ka Bada Faisla  -> 2026-11-27-1726-cabinet-clears-delimitation-bill-lok-sabha-seats-women-reservation.json (products: 0, sensitive: True)
+17:26:13 done: 1 published, 1 tried
