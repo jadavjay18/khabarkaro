@@ -5,8 +5,8 @@
   "tagline": "Trending khabar, seedhi bhasha mein.",
   "description": "KhabarKaro par paao India aur duniya ki trending khabar — Tech, Business, Sports, Entertainment aur bahut kuch, aasaan Hinglish mein.",
   "language": "hi-Latn",
-  "base_url": "https://jadavjay18.github.io/khabarkaro",
-  "base_path": "/khabarkaro",
+  "base_url": "https://khabarkaro.superdealsind.com",
+  "base_path": "",
   "posts_per_category_section": 3,
   "categories": [
     {"slug": "india", "name": "India", "color": "#7C2D12"},
