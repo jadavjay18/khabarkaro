@@ -75,6 +75,30 @@ def backfill_images():
         path.write_text(json.dumps(p, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
 
+def post_is_due(auto):
+    """Hourly wake-ups (GitHub may drop some): publish only inside the posting
+    window and when enough time has passed since the last automated post."""
+    now = datetime.now(IST)
+    start, end = auto.get("posting_hours_ist", [7, 22])
+    if not (start <= now.hour < end):
+        print(f"not due: {now:%H:%M} IST is outside posting hours {start}:00-{end}:00")
+        return False
+    last = None
+    for path in POSTS.glob("*.json"):
+        try:
+            p = json.loads(path.read_text(encoding="utf-8"))
+            if p.get("generated_by"):
+                d = datetime.fromisoformat(p["date"])
+                last = d if last is None or d > last else last
+        except Exception:
+            continue
+    gap = auto.get("min_hours_between_posts", 3.5)
+    if last and (now - last).total_seconds() < gap * 3600:
+        print(f"not due: last post {last:%d %b %H:%M}, next after {gap}h gap")
+        return False
+    return True
+
+
 def load_secrets():
     """The workflow passes every repo secret as JSON (ALL_SECRETS), so a new
     key added in GitHub settings works without editing the workflow."""
@@ -102,6 +126,8 @@ def main():
     if auto.get("paused"):
         log("automation is PAUSED in config.json — nothing to do")
         return 0
+    if os.environ.get("GITHUB_EVENT_NAME") == "schedule" and not post_is_due(auto):
+        return 0  # hourly wake-up, nothing due: exit without touching any files
 
     categories = {c["slug"] for c in cfg["categories"]}
     feeds = json.loads((ROOT / "automation" / "feeds.json").read_text(encoding="utf-8"))["feeds"]

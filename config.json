@@ -34,7 +34,9 @@
     "max_candidates_per_run": 6,
     "min_source_chars": 700,
     "gemini_models": ["gemini-3.8-flash", "gemini-3.6-flash", "gemini-3.5-flash-lite", "gemini-flash-latest"],
-    "amazon_tag": "jadavjay0f-21"
+    "amazon_tag": "jadavjay0f-21",
+    "posting_hours_ist": [7, 22],
+    "min_hours_between_posts": 3.5
   },
   "telegram_channel": "@Khabar_Karo"
 }
