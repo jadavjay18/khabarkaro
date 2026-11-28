@@ -1,46 +1,48 @@
-11:22:31 feed ok   The Hindu (india): 40 recent items
-11:22:31 feed ok   Times of India (india): 34 recent items
-11:22:31 feed ok   Hindustan Times (india): 30 recent items
-11:22:32 feed ok   NDTV (india): 20 recent items
-11:22:32 feed ok   India Today (india): 27 recent items
-11:22:32 feed ok   BBC News (world): 11 recent items
-11:22:32 feed ok   The Hindu (world): 12 recent items
-11:22:32 feed ok   Al Jazeera (world): 25 recent items
-11:22:32 feed ok   Hindustan Times (world): 40 recent items
-11:22:32 feed ok   Gadgets 360 (tech): 1 recent items
-11:22:32 feed ok   The Hindu (tech): 0 recent items
-11:22:32 feed ok   Hindustan Times (tech): 0 recent items
-11:22:32 feed ok   Mint (tech): 1 recent items
-11:22:32 feed ok   Mint (business): 12 recent items
-11:22:33 feed ok   Economic Times (business): 17 recent items
-11:22:33 feed ok   The Hindu BusinessLine (business): 12 recent items
-11:22:33 feed FAIL Business Standard (business): 403 Client Error: Forbidden for url: https://www.business-standard.com/rss/home_page_top_stories.rss
-11:22:33 feed ok   ESPNcricinfo (sports): 7 recent items
-11:22:33 feed ok   The Hindu (sports): 5 recent items
-11:22:33 feed ok   Times of India (sports): 11 recent items
-11:22:33 feed ok   Hindustan Times (sports): 3 recent items
-11:22:34 feed ok   The Hindu (entertainment): 0 recent items
-11:22:34 feed ok   Hindustan Times (entertainment): 13 recent items
-11:22:34 feed ok   NDTV (entertainment): 3 recent items
-11:22:34 feed ok   Times of India (entertainment): 20 recent items
-11:22:34 feed ok   News18 (entertainment): 12 recent items
-11:22:35 feed ok   Hindustan Times (auto): 0 recent items
-11:22:35 feed ok   ET Auto (auto): 2 recent items
-11:22:35 feed FAIL NDTV carandbike (auto): 404 Client Error: Not Found for url: https://feeds.feedburner.com/carandbike-latest
-11:22:36 feed ok   Rushlane (auto): 2 recent items
-11:22:37 feed ok   News18 (auto): 0 recent items
-11:22:37 feed ok   Hindustan Times (viral): 5 recent items
-11:22:37 feed ok   India Today (viral): 0 recent items
-11:22:37 feed ok   NDTV (viral): 2 recent items
-11:22:38 feed ok   News18 (viral): 4 recent items
-11:22:38 collected 371 items from 35 feeds
-11:22:38 category queue (longest waiting first): viral, auto, entertainment, world, business, india, sports
-11:22:38 candidate (3 sources: India Today, News18, Times of India): Ramayana box office Day 23: Epic beats Baahubali 2 to become India's 3rd biggest film
-11:24:38 gemini gemini-3.8-flash attempt 1: network error HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=120)
-11:26:48 gemini gemini-3.8-flash attempt 2: network error HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=120)
-11:28:58 gemini gemini-3.8-flash attempt 3: network error HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=120)
-11:29:35   amazon: card for 'ramayana book english': THE RAMAYANA : A COMPLETE RAMAYANA IN ENGLISH WITH ALL 7 KAN
-11:29:35   amazon: card for 'soundbar for tv': ZEBRONICS 90 Watts, Compact Soundbar, Home Theatre, Dual Dri
-11:29:36   image: Unsplash photo for 'movie theater screen crowd' by Marius GIRE
-11:29:36   PUBLISHED: Ramayana Box Office: 23 Din Mein 1,000 Crore Net Kamakar Baahubali 2 Ko Pachhada  -> 2026-11-28-1129-ramayana-box-office-day-23-crosses-1000-crore-beats-baahubali-2.json (products: 2, sensitive: False)
-11:29:36 done: 1 published, 1 tried
+13:31:20 feed ok   The Hindu (india): 40 recent items
+13:31:20 feed ok   Times of India (india): 35 recent items
+13:31:21 feed ok   Hindustan Times (india): 40 recent items
+13:31:21 feed ok   NDTV (india): 20 recent items
+13:31:21 feed ok   India Today (india): 30 recent items
+13:31:22 feed ok   BBC News (world): 9 recent items
+13:31:22 feed ok   The Hindu (world): 10 recent items
+13:31:22 feed ok   Al Jazeera (world): 25 recent items
+13:31:22 feed ok   Hindustan Times (world): 40 recent items
+13:31:22 feed ok   Gadgets 360 (tech): 3 recent items
+13:31:23 feed ok   The Hindu (tech): 2 recent items
+13:31:23 feed ok   Hindustan Times (tech): 1 recent items
+13:31:23 feed ok   Mint (tech): 3 recent items
+13:31:23 feed ok   Mint (business): 12 recent items
+13:31:23 feed ok   Economic Times (business): 25 recent items
+13:31:23 feed ok   The Hindu BusinessLine (business): 23 recent items
+13:31:23 feed FAIL Business Standard (business): 403 Client Error: Forbidden for url: https://www.business-standard.com/rss/home_page_top_stories.rss
+13:31:24 feed ok   ESPNcricinfo (sports): 8 recent items
+13:31:24 feed ok   The Hindu (sports): 6 recent items
+13:31:24 feed ok   Times of India (sports): 13 recent items
+13:31:24 feed ok   Hindustan Times (sports): 4 recent items
+13:31:24 feed ok   The Hindu (entertainment): 5 recent items
+13:31:24 feed ok   Hindustan Times (entertainment): 20 recent items
+13:31:25 feed ok   NDTV (entertainment): 8 recent items
+13:31:25 feed ok   Times of India (entertainment): 20 recent items
+13:31:25 feed ok   News18 (entertainment): 16 recent items
+13:31:26 feed ok   Hindustan Times (auto): 0 recent items
+13:31:27 feed ok   ET Auto (auto): 2 recent items
+13:31:27 feed FAIL NDTV carandbike (auto): 404 Client Error: Not Found for url: https://feeds.feedburner.com/carandbike-latest
+13:31:28 feed ok   Rushlane (auto): 4 recent items
+13:31:29 feed ok   News18 (auto): 0 recent items
+13:31:30 feed ok   Hindustan Times (viral): 7 recent items
+13:31:30 feed ok   India Today (viral): 0 recent items
+13:31:31 feed ok   NDTV (viral): 5 recent items
+13:31:31 feed ok   News18 (viral): 8 recent items
+13:31:31 collected 444 items from 35 feeds
+13:31:31 category queue (longest waiting first): auto, viral, world, business, india, sports, entertainment
+13:31:31 candidate (5 sources: Hindustan Times, India Today, NDTV, The Hindu, The Hindu BusinessLine): FSSAI sanctions prosecution against Bisleri over bacteria-positive sample
+13:33:33 gemini gemini-3.8-flash attempt 1: network error HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=120)
+13:33:44 gemini gemini-3.8-flash attempt 2: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",     "status": "UNAVAILABLE"   } } 
+13:34:26 gemini gemini-3.8-flash attempt 3: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",     "status": "UNAVAILABLE"   } } 
+13:34:27 gemini gemini-3.6-flash attempt 1: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",     "status": "UNAVAILABLE"   } } 
+13:35:36   amazon: card for 'water purifier': AQUA D PURE 4 in 1 Copper RO Water Purifier with 10 Stage Pu
+13:35:37   amazon: card for 'water testing kit': Konvio Neer TDS Meter for Water Testing | Digital TDS meter|
+13:35:37   amazon: card for 'copper water bottle': KC Pure Copper Designer Water Bottle with Leak Proof Protect
+13:35:38   image: Unsplash photo for 'packaged drinking water bottles shelf' by Jonathan Chng
+13:35:38   PUBLISHED: Bisleri Water Sample Mein Mila Coliform Bacteria, FSSAI Ne Prosecution Ko Di Manzuri  -> 2026-11-28-1335-fssai-sanctions-prosecution-bisleri-coliform-bacteria-sample.json (products: 3, sensitive: False)
+13:35:38 done: 1 published, 1 tried
