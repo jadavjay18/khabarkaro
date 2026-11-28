@@ -1,52 +1,42 @@
-18:31:16 feed ok   The Hindu (india): 40 recent items
-18:31:16 feed ok   Times of India (india): 36 recent items
-18:31:16 feed ok   Hindustan Times (india): 40 recent items
-18:31:16 feed ok   NDTV (india): 20 recent items
-18:31:17 feed ok   India Today (india): 33 recent items
-18:31:17 feed ok   BBC News (world): 8 recent items
-18:31:17 feed ok   The Hindu (world): 11 recent items
-18:31:17 feed ok   Al Jazeera (world): 25 recent items
-18:31:17 feed ok   Hindustan Times (world): 40 recent items
-18:31:18 feed ok   Gadgets 360 (tech): 5 recent items
-18:31:18 feed ok   The Hindu (tech): 2 recent items
-18:31:18 feed ok   Hindustan Times (tech): 2 recent items
-18:31:18 feed ok   Mint (tech): 3 recent items
-18:31:18 feed ok   Mint (business): 16 recent items
-18:31:18 feed ok   Economic Times (business): 40 recent items
-18:31:20 feed ok   The Hindu BusinessLine (business): 40 recent items
-18:31:20 feed FAIL Business Standard (business): 403 Client Error: Forbidden for url: https://www.business-standard.com/rss/home_page_top_stories.rss
-18:31:21 feed ok   ESPNcricinfo (sports): 11 recent items
-18:31:23 feed ok   The Hindu (sports): 10 recent items
-18:31:23 feed ok   Times of India (sports): 18 recent items
-18:31:23 feed ok   Hindustan Times (sports): 4 recent items
-18:31:23 feed ok   The Hindu (entertainment): 8 recent items
-18:31:23 feed ok   Hindustan Times (entertainment): 32 recent items
-18:31:23 feed ok   NDTV (entertainment): 18 recent items
-18:31:24 feed ok   Times of India (entertainment): 19 recent items
-18:31:24 feed ok   News18 (entertainment): 27 recent items
-18:31:25 feed ok   Hindustan Times (auto): 0 recent items
-18:31:25 feed ok   ET Auto (auto): 2 recent items
-18:31:25 feed FAIL NDTV carandbike (auto): 404 Client Error: Not Found for url: https://feeds.feedburner.com/carandbike-latest
-18:31:26 feed ok   Rushlane (auto): 0 recent items
-18:31:27 feed ok   News18 (auto): 0 recent items
-18:31:27 feed ok   Hindustan Times (viral): 12 recent items
-18:31:27 feed ok   India Today (viral): 0 recent items
-18:31:28 feed ok   NDTV (viral): 7 recent items
-18:31:29 feed ok   News18 (viral): 18 recent items
-18:31:29 collected 547 items from 35 feeds
-18:31:29 category queue (longest waiting first): auto, world, business, sports, entertainment, india, viral
-18:31:29 candidate (7 sources: Economic Times, Hindustan Times, India Today, NDTV, The Hindu, The Hindu BusinessLine, Times of India): Thirupparankundram row LIVE: Karthigai lamp lit at 'deepathoon'; Supreme Court appointed retired Judges oversee the ceremony
-18:31:33 gemini gemini-3.8-flash attempt 1: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",     "status": "UNAVAILABLE"   } } 
-18:31:49 gemini gemini-3.8-flash attempt 2: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",     "status": "UNAVAILABLE"   } } 
-18:34:29 gemini gemini-3.8-flash attempt 3: network error HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=120)
-18:34:50   rejected: model skipped: Yeh khabar dharmi/communal vivad aur adalat keMamle se judi hone ke karan sensitive hai.
-18:34:50 candidate (1 sources: ET Auto): Greaves Electric expects to break even ahead of FY28 target; readies 'Icebreaker' EV launch
-18:34:57 gemini gemini-3.8-flash attempt 1: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",     "status": "UNAVAILABLE"   } } 
-18:37:12 gemini gemini-3.8-flash attempt 2: network error HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=120)
-18:39:22 gemini gemini-3.8-flash attempt 3: network error HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=120)
-18:39:49   amazon: card for 'electric scooter helmet': OTO2EYE Open Face Cap/Half Cap with Strap All Purpose Size M
-18:39:49   amazon: card for 'riding gloves': Probiker Protective Full Finger Gloves Anti-Skid Surface Bre
-18:39:50   amazon: card for 'bike cover': Bike Cover for All Bajaj Pulsar Model Upto 400CC | All Weath
-18:39:51   image: Unsplash photo for 'electric scooter charging street' by Marek Rucinski
-18:39:51   PUBLISHED: Greaves Electric FY28 Target Se Pehle Break-Even Ke Liye Tayyar, Naya EV Scooter Hoga Launch  -> 2026-11-28-1839-greaves-electric-break-even-target-icebreaker-ev-launch.json (products: 3, sensitive: False)
-18:39:51 done: 1 published, 2 tried
+21:01:07 feed ok   The Hindu (india): 40 recent items
+21:01:07 feed ok   Times of India (india): 36 recent items
+21:01:07 feed ok   Hindustan Times (india): 40 recent items
+21:01:07 feed ok   NDTV (india): 20 recent items
+21:01:08 feed ok   India Today (india): 28 recent items
+21:01:08 feed ok   BBC News (world): 7 recent items
+21:01:08 feed ok   The Hindu (world): 11 recent items
+21:01:08 feed ok   Al Jazeera (world): 25 recent items
+21:01:08 feed ok   Hindustan Times (world): 40 recent items
+21:01:08 feed ok   Gadgets 360 (tech): 5 recent items
+21:01:08 feed ok   The Hindu (tech): 2 recent items
+21:01:08 feed ok   Hindustan Times (tech): 2 recent items
+21:01:09 feed ok   Mint (tech): 5 recent items
+21:01:09 feed ok   Mint (business): 17 recent items
+21:01:09 feed ok   Economic Times (business): 37 recent items
+21:01:09 feed ok   The Hindu BusinessLine (business): 40 recent items
+21:01:09 feed FAIL Business Standard (business): 403 Client Error: Forbidden for url: https://www.business-standard.com/rss/home_page_top_stories.rss
+21:01:09 feed ok   ESPNcricinfo (sports): 12 recent items
+21:01:09 feed ok   The Hindu (sports): 15 recent items
+21:01:09 feed ok   Times of India (sports): 17 recent items
+21:01:09 feed ok   Hindustan Times (sports): 4 recent items
+21:01:09 feed ok   The Hindu (entertainment): 8 recent items
+21:01:10 feed ok   Hindustan Times (entertainment): 27 recent items
+21:01:10 feed ok   NDTV (entertainment): 19 recent items
+21:01:10 feed ok   Times of India (entertainment): 20 recent items
+21:01:11 feed ok   News18 (entertainment): 23 recent items
+21:01:12 feed ok   Hindustan Times (auto): 0 recent items
+21:01:12 feed ok   ET Auto (auto): 0 recent items
+21:01:13 feed FAIL NDTV carandbike (auto): 404 Client Error: Not Found for url: https://feeds.feedburner.com/carandbike-latest
+21:01:14 feed ok   Rushlane (auto): 7 recent items
+21:01:14 feed ok   News18 (auto): 0 recent items
+21:01:15 feed ok   Hindustan Times (viral): 11 recent items
+21:01:15 feed ok   India Today (viral): 0 recent items
+21:01:15 feed ok   NDTV (viral): 6 recent items
+21:01:16 feed ok   News18 (viral): 19 recent items
+21:01:16 collected 543 items from 35 feeds
+21:01:16 category queue (longest waiting first): world, business, sports, entertainment, india, viral, auto
+21:01:16 candidate (4 sources: BBC News, Hindustan Times, NDTV, The Hindu): Israeli Airstrike Kills 2 Doctors Without Borders Staff In Gaza Clinic
+21:01:19 gemini gemini-3.8-flash attempt 1: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",     "status": "UNAVAILABLE"   } } 
+21:01:50   image: tragedy-related story — headline card only
+21:01:50   PUBLISHED: Gaza Clinic Par Israeli Strike Mein MSF Ke 2 Staff Members Ki Maut, IDF Ka Daawa  -> 2026-11-28-2101-israeli-strike-kills-two-msf-staff-gaza.json (products: 0, sensitive: True)
+21:01:50 done: 1 published, 1 tried
