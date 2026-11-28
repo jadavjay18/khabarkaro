@@ -1,35 +1,46 @@
-11:01:10 feed ok   The Hindu (india): 40 recent items
-11:01:10 feed ok   Times of India (india): 36 recent items
-11:01:11 feed ok   Hindustan Times (india): 30 recent items
-11:01:11 feed ok   NDTV (india): 20 recent items
-11:01:12 feed ok   India Today (india): 29 recent items
-11:01:12 feed ok   BBC News (world): 11 recent items
-11:01:12 feed ok   The Hindu (world): 14 recent items
-11:01:12 feed ok   Al Jazeera (world): 25 recent items
-11:01:13 feed ok   Hindustan Times (world): 40 recent items
-11:01:13 feed ok   Gadgets 360 (tech): 1 recent items
-11:01:13 feed ok   The Hindu (tech): 0 recent items
-11:01:13 feed ok   Hindustan Times (tech): 0 recent items
-11:01:13 feed ok   Mint (tech): 1 recent items
-11:01:13 feed ok   Mint (business): 11 recent items
-11:01:13 feed ok   Economic Times (business): 17 recent items
-11:01:14 feed ok   The Hindu BusinessLine (business): 10 recent items
-11:01:16 feed FAIL Business Standard (business): 403 Client Error: Forbidden for url: https://www.business-standard.com/rss/home_page_top_stories.rss
-11:01:16 feed ok   ESPNcricinfo (sports): 7 recent items
-11:01:16 feed ok   The Hindu (sports): 7 recent items
-11:01:16 feed ok   Times of India (sports): 11 recent items
-11:01:16 feed ok   Hindustan Times (sports): 4 recent items
-11:01:16 feed ok   The Hindu (entertainment): 0 recent items
-11:01:16 feed ok   Hindustan Times (entertainment): 13 recent items
-11:01:17 feed ok   Hindustan Times (auto): 0 recent items
-11:01:17 feed ok   ET Auto (auto): 2 recent items
-11:01:17 feed ok   Hindustan Times (viral): 6 recent items
-11:01:17 feed ok   India Today (viral): 0 recent items
-11:01:17 collected 335 items from 27 feeds
-11:01:17 candidate (4 sources: Al Jazeera, Hindustan Times, NDTV, Times of India): OpenAI vs Apple: ChatGPT maker countersues iPhone maker for stealing trade secrets
-11:03:18 gemini gemini-3.8-flash attempt 1: network error HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=120)
-11:05:28 gemini gemini-3.8-flash attempt 2: network error HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=120)
-11:05:44 gemini gemini-3.8-flash attempt 3: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",     "status": "UNAVAILABLE"   } } 
-11:06:08   image: Unsplash photo for 'smartphone and artificial intelligence technology concept' by Sumaid pal Singh Bakshi
-11:06:08   PUBLISHED: OpenAI Ne Apple Par Lagaya Trade Secrets Chori Karne Ka Aarop, Court Mein Thoka Countersuit  -> 2026-11-28-1106-openai-countersues-apple-over-trade-secrets-lawsuit.json (products: 0, sensitive: True)
-11:06:08 done: 1 published, 1 tried
+11:22:31 feed ok   The Hindu (india): 40 recent items
+11:22:31 feed ok   Times of India (india): 34 recent items
+11:22:31 feed ok   Hindustan Times (india): 30 recent items
+11:22:32 feed ok   NDTV (india): 20 recent items
+11:22:32 feed ok   India Today (india): 27 recent items
+11:22:32 feed ok   BBC News (world): 11 recent items
+11:22:32 feed ok   The Hindu (world): 12 recent items
+11:22:32 feed ok   Al Jazeera (world): 25 recent items
+11:22:32 feed ok   Hindustan Times (world): 40 recent items
+11:22:32 feed ok   Gadgets 360 (tech): 1 recent items
+11:22:32 feed ok   The Hindu (tech): 0 recent items
+11:22:32 feed ok   Hindustan Times (tech): 0 recent items
+11:22:32 feed ok   Mint (tech): 1 recent items
+11:22:32 feed ok   Mint (business): 12 recent items
+11:22:33 feed ok   Economic Times (business): 17 recent items
+11:22:33 feed ok   The Hindu BusinessLine (business): 12 recent items
+11:22:33 feed FAIL Business Standard (business): 403 Client Error: Forbidden for url: https://www.business-standard.com/rss/home_page_top_stories.rss
+11:22:33 feed ok   ESPNcricinfo (sports): 7 recent items
+11:22:33 feed ok   The Hindu (sports): 5 recent items
+11:22:33 feed ok   Times of India (sports): 11 recent items
+11:22:33 feed ok   Hindustan Times (sports): 3 recent items
+11:22:34 feed ok   The Hindu (entertainment): 0 recent items
+11:22:34 feed ok   Hindustan Times (entertainment): 13 recent items
+11:22:34 feed ok   NDTV (entertainment): 3 recent items
+11:22:34 feed ok   Times of India (entertainment): 20 recent items
+11:22:34 feed ok   News18 (entertainment): 12 recent items
+11:22:35 feed ok   Hindustan Times (auto): 0 recent items
+11:22:35 feed ok   ET Auto (auto): 2 recent items
+11:22:35 feed FAIL NDTV carandbike (auto): 404 Client Error: Not Found for url: https://feeds.feedburner.com/carandbike-latest
+11:22:36 feed ok   Rushlane (auto): 2 recent items
+11:22:37 feed ok   News18 (auto): 0 recent items
+11:22:37 feed ok   Hindustan Times (viral): 5 recent items
+11:22:37 feed ok   India Today (viral): 0 recent items
+11:22:37 feed ok   NDTV (viral): 2 recent items
+11:22:38 feed ok   News18 (viral): 4 recent items
+11:22:38 collected 371 items from 35 feeds
+11:22:38 category queue (longest waiting first): viral, auto, entertainment, world, business, india, sports
+11:22:38 candidate (3 sources: India Today, News18, Times of India): Ramayana box office Day 23: Epic beats Baahubali 2 to become India's 3rd biggest film
+11:24:38 gemini gemini-3.8-flash attempt 1: network error HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=120)
+11:26:48 gemini gemini-3.8-flash attempt 2: network error HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=120)
+11:28:58 gemini gemini-3.8-flash attempt 3: network error HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=120)
+11:29:35   amazon: card for 'ramayana book english': THE RAMAYANA : A COMPLETE RAMAYANA IN ENGLISH WITH ALL 7 KAN
+11:29:35   amazon: card for 'soundbar for tv': ZEBRONICS 90 Watts, Compact Soundbar, Home Theatre, Dual Dri
+11:29:36   image: Unsplash photo for 'movie theater screen crowd' by Marius GIRE
+11:29:36   PUBLISHED: Ramayana Box Office: 23 Din Mein 1,000 Crore Net Kamakar Baahubali 2 Ko Pachhada  -> 2026-11-28-1129-ramayana-box-office-day-23-crosses-1000-crore-beats-baahubali-2.json (products: 2, sensitive: False)
+11:29:36 done: 1 published, 1 tried
