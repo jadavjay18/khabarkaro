@@ -1,51 +1,52 @@
-16:01:01 feed ok   The Hindu (india): 40 recent items
-16:01:01 feed ok   Times of India (india): 35 recent items
-16:01:01 feed ok   Hindustan Times (india): 40 recent items
-16:01:02 feed ok   NDTV (india): 20 recent items
-16:01:02 feed ok   India Today (india): 33 recent items
-16:01:02 feed ok   BBC News (world): 10 recent items
-16:01:02 feed ok   The Hindu (world): 11 recent items
-16:01:02 feed ok   Al Jazeera (world): 25 recent items
-16:01:02 feed ok   Hindustan Times (world): 40 recent items
-16:01:03 feed ok   Gadgets 360 (tech): 4 recent items
-16:01:03 feed ok   The Hindu (tech): 2 recent items
-16:01:03 feed ok   Hindustan Times (tech): 2 recent items
-16:01:03 feed ok   Mint (tech): 3 recent items
-16:01:03 feed ok   Mint (business): 15 recent items
-16:01:03 feed ok   Economic Times (business): 34 recent items
-16:01:03 feed ok   The Hindu BusinessLine (business): 39 recent items
-16:01:04 feed FAIL Business Standard (business): 403 Client Error: Forbidden for url: https://www.business-standard.com/rss/home_page_top_stories.rss
-16:01:04 feed ok   ESPNcricinfo (sports): 11 recent items
-16:01:04 feed ok   The Hindu (sports): 7 recent items
-16:01:04 feed ok   Times of India (sports): 17 recent items
-16:01:04 feed ok   Hindustan Times (sports): 5 recent items
-16:01:04 feed ok   The Hindu (entertainment): 7 recent items
-16:01:04 feed ok   Hindustan Times (entertainment): 26 recent items
-16:01:05 feed ok   NDTV (entertainment): 13 recent items
-16:01:05 feed ok   Times of India (entertainment): 20 recent items
-16:01:07 feed ok   News18 (entertainment): 22 recent items
-16:01:07 feed ok   Hindustan Times (auto): 0 recent items
-16:01:08 feed ok   ET Auto (auto): 2 recent items
-16:01:08 feed FAIL NDTV carandbike (auto): 404 Client Error: Not Found for url: https://feeds.feedburner.com/carandbike-latest
-16:01:09 feed ok   Rushlane (auto): 5 recent items
-16:01:10 feed ok   News18 (auto): 0 recent items
-16:01:10 feed ok   Hindustan Times (viral): 10 recent items
-16:01:10 feed ok   India Today (viral): 0 recent items
-16:01:10 feed ok   NDTV (viral): 6 recent items
-16:01:11 feed ok   News18 (viral): 13 recent items
-16:01:11 collected 517 items from 35 feeds
-16:01:11 category queue (longest waiting first): viral, auto, world, business, sports, entertainment, india
-16:01:11 candidate (8 sources: Al Jazeera, BBC News, Economic Times, Hindustan Times, India Today, NDTV, The Hindu, Times of India): Seven students killed and nearly 100 injured in explosion in Afghanistan, official says
-16:01:16 gemini gemini-3.8-flash attempt 1: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",     "status": "UNAVAILABLE"   } } 
-16:01:32 gemini gemini-3.8-flash attempt 2: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",     "status": "UNAVAILABLE"   } } 
-16:02:13 gemini gemini-3.8-flash attempt 3: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",     "status": "UNAVAILABLE"   } } 
-16:02:25   rejected: model skipped: Story involves the death and injuries of school students (minors) in an explosion.
-16:02:25 candidate (2 sources: Hindustan Times, News18): Vande Bharat Passenger Finds Metal Bolt In Vada On Bengaluru-Belagavi Train; IRCTC Responds
-16:02:34 gemini gemini-3.8-flash attempt 1: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",     "status": "UNAVAILABLE"   } } 
-16:04:49 gemini gemini-3.8-flash attempt 2: network error HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=120)
-16:05:01 gemini gemini-3.8-flash attempt 3: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",     "status": "UNAVAILABLE"   } } 
-16:05:16   amazon: card for 'packable snacks for travel': Kyraton Foldable Backpack, Lightweight Portable Travel Backp
-16:05:17   amazon: card for 'food container set': CELLO Checkers Kitchen Storage Container Box Set of 18 Pcs G
-16:05:17   image: Unsplash photo for 'Indian passenger train dining seat' by You Le
-16:05:17   PUBLISHED: Vande Bharat Vada Mein Mila Metal Bolt: IRCTC Ne Caterer Par Liya Action  -> 2026-11-28-1605-vande-bharat-meal-metal-bolt-irctc-action.json (products: 2, sensitive: False)
-16:05:17 done: 1 published, 2 tried
+18:31:16 feed ok   The Hindu (india): 40 recent items
+18:31:16 feed ok   Times of India (india): 36 recent items
+18:31:16 feed ok   Hindustan Times (india): 40 recent items
+18:31:16 feed ok   NDTV (india): 20 recent items
+18:31:17 feed ok   India Today (india): 33 recent items
+18:31:17 feed ok   BBC News (world): 8 recent items
+18:31:17 feed ok   The Hindu (world): 11 recent items
+18:31:17 feed ok   Al Jazeera (world): 25 recent items
+18:31:17 feed ok   Hindustan Times (world): 40 recent items
+18:31:18 feed ok   Gadgets 360 (tech): 5 recent items
+18:31:18 feed ok   The Hindu (tech): 2 recent items
+18:31:18 feed ok   Hindustan Times (tech): 2 recent items
+18:31:18 feed ok   Mint (tech): 3 recent items
+18:31:18 feed ok   Mint (business): 16 recent items
+18:31:18 feed ok   Economic Times (business): 40 recent items
+18:31:20 feed ok   The Hindu BusinessLine (business): 40 recent items
+18:31:20 feed FAIL Business Standard (business): 403 Client Error: Forbidden for url: https://www.business-standard.com/rss/home_page_top_stories.rss
+18:31:21 feed ok   ESPNcricinfo (sports): 11 recent items
+18:31:23 feed ok   The Hindu (sports): 10 recent items
+18:31:23 feed ok   Times of India (sports): 18 recent items
+18:31:23 feed ok   Hindustan Times (sports): 4 recent items
+18:31:23 feed ok   The Hindu (entertainment): 8 recent items
+18:31:23 feed ok   Hindustan Times (entertainment): 32 recent items
+18:31:23 feed ok   NDTV (entertainment): 18 recent items
+18:31:24 feed ok   Times of India (entertainment): 19 recent items
+18:31:24 feed ok   News18 (entertainment): 27 recent items
+18:31:25 feed ok   Hindustan Times (auto): 0 recent items
+18:31:25 feed ok   ET Auto (auto): 2 recent items
+18:31:25 feed FAIL NDTV carandbike (auto): 404 Client Error: Not Found for url: https://feeds.feedburner.com/carandbike-latest
+18:31:26 feed ok   Rushlane (auto): 0 recent items
+18:31:27 feed ok   News18 (auto): 0 recent items
+18:31:27 feed ok   Hindustan Times (viral): 12 recent items
+18:31:27 feed ok   India Today (viral): 0 recent items
+18:31:28 feed ok   NDTV (viral): 7 recent items
+18:31:29 feed ok   News18 (viral): 18 recent items
+18:31:29 collected 547 items from 35 feeds
+18:31:29 category queue (longest waiting first): auto, world, business, sports, entertainment, india, viral
+18:31:29 candidate (7 sources: Economic Times, Hindustan Times, India Today, NDTV, The Hindu, The Hindu BusinessLine, Times of India): Thirupparankundram row LIVE: Karthigai lamp lit at 'deepathoon'; Supreme Court appointed retired Judges oversee the ceremony
+18:31:33 gemini gemini-3.8-flash attempt 1: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",     "status": "UNAVAILABLE"   } } 
+18:31:49 gemini gemini-3.8-flash attempt 2: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",     "status": "UNAVAILABLE"   } } 
+18:34:29 gemini gemini-3.8-flash attempt 3: network error HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=120)
+18:34:50   rejected: model skipped: Yeh khabar dharmi/communal vivad aur adalat keMamle se judi hone ke karan sensitive hai.
+18:34:50 candidate (1 sources: ET Auto): Greaves Electric expects to break even ahead of FY28 target; readies 'Icebreaker' EV launch
+18:34:57 gemini gemini-3.8-flash attempt 1: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",     "status": "UNAVAILABLE"   } } 
+18:37:12 gemini gemini-3.8-flash attempt 2: network error HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=120)
+18:39:22 gemini gemini-3.8-flash attempt 3: network error HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=120)
+18:39:49   amazon: card for 'electric scooter helmet': OTO2EYE Open Face Cap/Half Cap with Strap All Purpose Size M
+18:39:49   amazon: card for 'riding gloves': Probiker Protective Full Finger Gloves Anti-Skid Surface Bre
+18:39:50   amazon: card for 'bike cover': Bike Cover for All Bajaj Pulsar Model Upto 400CC | All Weath
+18:39:51   image: Unsplash photo for 'electric scooter charging street' by Marek Rucinski
+18:39:51   PUBLISHED: Greaves Electric FY28 Target Se Pehle Break-Even Ke Liye Tayyar, Naya EV Scooter Hoga Launch  -> 2026-11-28-1839-greaves-electric-break-even-target-icebreaker-ev-launch.json (products: 3, sensitive: False)
+18:39:51 done: 1 published, 2 tried
