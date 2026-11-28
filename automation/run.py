@@ -132,6 +132,21 @@ def order_for_rotation(clusters, auto, log):
     return breaking + rest
 
 
+def tragedy_posted_today():
+    """True when a death/disaster/violence post already went out today (IST)."""
+    today = datetime.now(IST).date()
+    for path in POSTS.glob("*.json"):
+        try:
+            p = json.loads(path.read_text(encoding="utf-8"))
+            if datetime.fromisoformat(p["date"]).astimezone(IST).date() != today:
+                continue
+            if safety.is_tragedy(p.get("title", "") + " " + " ".join(p.get("body", []))):
+                return True
+        except Exception:
+            continue
+    return False
+
+
 def load_secrets():
     """The workflow passes every repo secret as JSON (ALL_SECRETS), so a new
     key added in GitHub settings works without editing the workflow."""
@@ -177,6 +192,10 @@ def main():
 
     published, tried = 0, 0
     new_slugs = []
+    tragedy_min = auto.get("tragedy_min_sources", 5)
+    tragedy_cap = auto.get("max_tragedy_posts_per_day", 1)
+    tragedy_today = tragedy_posted_today()
+    held_back = 0
     for c in order_for_rotation(clusters, auto, log):
         if published >= want or tried >= max_tries:
             break
@@ -189,6 +208,11 @@ def main():
             log(f"SAFETY SKIP: {head}")
             seen.append({"tok": sorted(c["tok"]), "links": [i["link"] for i in c["items"]], "status": "safety-skip"})
             continue
+        if safety.is_tragedy(all_text):
+            # deaths / war / disasters: only very big stories, and at most one a day
+            if len(c["sources"]) < tragedy_min or (tragedy_cap and tragedy_today):
+                held_back += 1
+                continue
 
         tried += 1
         log(f"candidate ({len(c['sources'])} sources: {', '.join(c['sources'])}): {head}")
@@ -253,6 +277,8 @@ def main():
         new_slugs.append(slug)
         log(f"  PUBLISHED: {out['title']}  -> {path.name} (products: {len(prods)}, sensitive: {sensitive})")
 
+    if held_back:
+        log(f"held back {held_back} death/violence stories (need {tragedy_min}+ sources, max {tragedy_cap} a day)")
     SEEN.write_text(json.dumps(seen[-1500:], ensure_ascii=False) + "\n", encoding="utf-8")
     log(f"done: {published} published, {tried} tried")
     out_file = os.environ.get("GITHUB_OUTPUT")

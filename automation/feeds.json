@@ -10,14 +10,16 @@
     {"source": "The Hindu", "category": "world", "url": "https://www.thehindu.com/news/international/feeder/default.rss"},
     {"source": "Al Jazeera", "category": "world", "url": "https://www.aljazeera.com/xml/rss/all.xml"},
     {"source": "Hindustan Times", "category": "world", "url": "https://www.hindustantimes.com/feeds/rss/world-news/rssfeed.xml"},
+    {"source": "BBC News", "category": "world", "url": "https://feeds.bbci.co.uk/news/science_and_environment/rss.xml"},
     {"source": "Gadgets 360", "category": "tech", "url": "https://feeds.feedburner.com/gadgets360-latest"},
     {"source": "The Hindu", "category": "tech", "url": "https://www.thehindu.com/sci-tech/technology/feeder/default.rss"},
     {"source": "Hindustan Times", "category": "tech", "url": "https://www.hindustantimes.com/feeds/rss/technology/rssfeed.xml"},
     {"source": "Mint", "category": "tech", "url": "https://www.livemint.com/rss/technology"},
+    {"source": "BBC News", "category": "tech", "url": "https://feeds.bbci.co.uk/news/technology/rss.xml"},
     {"source": "Mint", "category": "business", "url": "https://www.livemint.com/rss/news"},
     {"source": "Economic Times", "category": "business", "url": "https://economictimes.indiatimes.com/rssfeedstopstories.cms"},
     {"source": "The Hindu BusinessLine", "category": "business", "url": "https://www.thehindubusinessline.com/feeder/default.rss"},
-    {"source": "Business Standard", "category": "business", "url": "https://www.business-standard.com/rss/home_page_top_stories.rss"},
+    {"source": "BBC News", "category": "business", "url": "https://feeds.bbci.co.uk/news/business/rss.xml"},
     {"source": "ESPNcricinfo", "category": "sports", "url": "https://www.espncricinfo.com/rss/content/story/feeds/0.xml"},
     {"source": "The Hindu", "category": "sports", "url": "https://www.thehindu.com/sport/feeder/default.rss"},
     {"source": "Times of India", "category": "sports", "url": "https://timesofindia.indiatimes.com/rssfeeds/4719148.cms"},
@@ -29,12 +31,12 @@
     {"source": "News18", "category": "entertainment", "url": "https://www.news18.com/rss/movies.xml"},
     {"source": "Hindustan Times", "category": "auto", "url": "https://www.hindustantimes.com/feeds/rss/autos/rssfeed.xml"},
     {"source": "ET Auto", "category": "auto", "url": "https://auto.economictimes.indiatimes.com/rss/topstories"},
-    {"source": "NDTV carandbike", "category": "auto", "url": "https://feeds.feedburner.com/carandbike-latest"},
     {"source": "Rushlane", "category": "auto", "url": "https://www.rushlane.com/feed"},
     {"source": "News18", "category": "auto", "url": "https://www.news18.com/rss/auto.xml"},
     {"source": "Hindustan Times", "category": "viral", "url": "https://www.hindustantimes.com/feeds/rss/trending/rssfeed.xml"},
     {"source": "India Today", "category": "viral", "url": "https://www.indiatoday.in/rss/1206514"},
     {"source": "NDTV", "category": "viral", "url": "https://feeds.feedburner.com/ndtvnews-offbeat-news"},
-    {"source": "News18", "category": "viral", "url": "https://www.news18.com/rss/viral.xml"}
+    {"source": "News18", "category": "viral", "url": "https://www.news18.com/rss/viral.xml"},
+    {"source": "Good News Network", "category": "viral", "url": "https://www.goodnewsnetwork.org/feed/"}
   ]
 }

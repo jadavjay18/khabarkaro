@@ -32,6 +32,8 @@
     "min_sources": 2,
     "min_sources_by_category": {"entertainment": 1, "auto": 1, "viral": 1},
     "breaking_min_sources": 5,
+    "tragedy_min_sources": 5,
+    "max_tragedy_posts_per_day": 1,
     "max_age_hours": 12,
     "max_candidates_per_run": 6,
     "min_source_chars": 700,
