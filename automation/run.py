@@ -99,6 +99,39 @@ def post_is_due(auto):
     return True
 
 
+def last_post_by_category():
+    """Latest automated post time per category, to rotate categories fairly."""
+    last = {}
+    for path in POSTS.glob("*.json"):
+        try:
+            p = json.loads(path.read_text(encoding="utf-8"))
+            d = datetime.fromisoformat(p["date"])
+            cat = p.get("category")
+            if cat and (cat not in last or d > last[cat]):
+                last[cat] = d
+        except Exception:
+            continue
+    return last
+
+
+def order_for_rotation(clusters, auto, log):
+    """Big breaking stories (many sources) go first; after that, categories
+    that have waited longest for a post get priority, so Entertainment,
+    Auto and Viral are not always pushed out by national news."""
+    default_min = auto.get("min_sources", 2)
+    mins = auto.get("min_sources_by_category", {})
+    big = auto.get("breaking_min_sources", 5)
+    eligible = [c for c in clusters if len(c["sources"]) >= mins.get(c["cat_hint"], default_min)]
+    last = last_post_by_category()
+    epoch = datetime(2000, 1, 1, tzinfo=IST)
+    breaking = [c for c in eligible if len(c["sources"]) >= big]
+    rest = [c for c in eligible if len(c["sources"]) < big]
+    rest.sort(key=lambda c: last.get(c["cat_hint"], epoch))  # stable: keeps best-first order inside a category
+    waiting = sorted({c["cat_hint"] for c in rest}, key=lambda k: last.get(k, epoch))
+    log(f"category queue (longest waiting first): {', '.join(waiting)}")
+    return breaking + rest
+
+
 def load_secrets():
     """The workflow passes every repo secret as JSON (ALL_SECRETS), so a new
     key added in GitHub settings works without editing the workflow."""
@@ -136,7 +169,6 @@ def main():
     seen = load_seen()
 
     clusters = collect.collect(feeds, auto.get("max_age_hours", 12), log)
-    min_sources = auto.get("min_sources", 2)
     want = auto.get("posts_per_run", 1)
     max_tries = auto.get("max_candidates_per_run", 6)
     models = auto.get("gemini_models", ["gemini-3.8-flash", "gemini-flash-latest"])
@@ -145,11 +177,9 @@ def main():
 
     published, tried = 0, 0
     new_slugs = []
-    for c in clusters:
+    for c in order_for_rotation(clusters, auto, log):
         if published >= want or tried >= max_tries:
             break
-        if len(c["sources"]) < min_sources:
-            continue
         head = c["items"][0]["title"]
         if already_seen(c, seen):
             continue

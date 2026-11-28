@@ -30,13 +30,15 @@
     "amazon_selftest": false,
     "posts_per_run": 1,
     "min_sources": 2,
+    "min_sources_by_category": {"entertainment": 1, "auto": 1, "viral": 1},
+    "breaking_min_sources": 5,
     "max_age_hours": 12,
     "max_candidates_per_run": 6,
     "min_source_chars": 700,
     "gemini_models": ["gemini-3.8-flash", "gemini-3.6-flash", "gemini-3.5-flash-lite", "gemini-flash-latest"],
     "amazon_tag": "jadavjay0f-21",
     "posting_hours_ist": [7, 22],
-    "min_hours_between_posts": 3.5
+    "min_hours_between_posts": 2
   },
   "telegram_channel": "@Khabar_Karo"
 }
