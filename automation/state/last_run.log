@@ -1,35 +1,35 @@
-17:22:55 feed ok   The Hindu (india): 40 recent items
-17:22:55 feed ok   Times of India (india): 38 recent items
-17:22:55 feed ok   Hindustan Times (india): 40 recent items
-17:22:55 feed ok   NDTV (india): 20 recent items
-17:22:56 feed ok   India Today (india): 34 recent items
-17:22:56 feed ok   BBC News (world): 18 recent items
-17:22:56 feed ok   The Hindu (world): 17 recent items
-17:22:56 feed ok   Al Jazeera (world): 25 recent items
-17:22:56 feed ok   Hindustan Times (world): 40 recent items
-17:22:56 feed ok   Gadgets 360 (tech): 23 recent items
-17:22:57 feed ok   The Hindu (tech): 11 recent items
-17:22:57 feed ok   Hindustan Times (tech): 3 recent items
-17:22:57 feed ok   Mint (tech): 7 recent items
-17:22:57 feed ok   Mint (business): 22 recent items
-17:22:57 feed ok   Economic Times (business): 34 recent items
-17:22:57 feed ok   The Hindu BusinessLine (business): 40 recent items
-17:22:57 feed FAIL Business Standard (business): 403 Client Error: Forbidden for url: https://www.business-standard.com/rss/home_page_top_stories.rss
-17:22:58 feed ok   ESPNcricinfo (sports): 7 recent items
-17:22:58 feed ok   The Hindu (sports): 6 recent items
-17:22:58 feed ok   Times of India (sports): 17 recent items
-17:22:58 feed ok   Hindustan Times (sports): 7 recent items
-17:22:59 feed ok   The Hindu (entertainment): 13 recent items
-17:22:59 feed ok   Hindustan Times (entertainment): 34 recent items
-17:23:00 feed ok   Hindustan Times (auto): 0 recent items
-17:23:00 feed ok   ET Auto (auto): 1 recent items
-17:23:00 feed ok   Hindustan Times (viral): 14 recent items
-17:23:00 feed ok   India Today (viral): 0 recent items
-17:23:00 collected 511 items from 27 feeds
-17:23:01 candidate (5 sources: Hindustan Times, India Today, The Hindu, The Hindu BusinessLine, Times of India): Cabinet clears fresh women’s quota Bill; Lok Sabha seats to rise 50% across all States
-17:25:01 gemini gemini-3.8-flash attempt 1: network error HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=120)
-17:25:15 gemini gemini-3.8-flash attempt 2: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",     "status": "UNAVAILABLE"   } } 
-17:25:58 gemini gemini-3.8-flash attempt 3: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",     "status": "UNAVAILABLE"   } } 
-17:26:13   image: Unsplash photo for 'Indian Parliament building New Delhi' by Pixels Street
-17:26:13   PUBLISHED: Lok Sabha Seats Me 50% Badhotri Aur Women Quota Par Cabinet Ka Bada Faisla  -> 2026-11-27-1726-cabinet-clears-delimitation-bill-lok-sabha-seats-women-reservation.json (products: 0, sensitive: True)
-17:26:13 done: 1 published, 1 tried
+07:01:04 feed FAIL The Hindu (india): 403 Client Error: Forbidden for url: https://www.thehindu.com/news/national/feeder/default.rss
+07:01:04 feed ok   Times of India (india): 35 recent items
+07:01:05 feed ok   Hindustan Times (india): 24 recent items
+07:01:05 feed ok   NDTV (india): 20 recent items
+07:01:06 feed ok   India Today (india): 25 recent items
+07:01:06 feed ok   BBC News (world): 14 recent items
+07:01:06 feed FAIL The Hindu (world): 403 Client Error: Forbidden for url: https://www.thehindu.com/news/international/feeder/default.rss
+07:01:06 feed ok   Al Jazeera (world): 25 recent items
+07:01:06 feed ok   Hindustan Times (world): 37 recent items
+07:01:06 feed ok   Gadgets 360 (tech): 4 recent items
+07:01:06 feed FAIL The Hindu (tech): 403 Client Error: Forbidden for url: https://www.thehindu.com/sci-tech/technology/feeder/default.rss
+07:01:07 feed ok   Hindustan Times (tech): 2 recent items
+07:01:07 feed ok   Mint (tech): 2 recent items
+07:01:07 feed ok   Mint (business): 10 recent items
+07:01:07 feed ok   Economic Times (business): 9 recent items
+07:01:27 feed FAIL The Hindu BusinessLine (business): HTTPSConnectionPool(host='www.thehindubusinessline.com', port=443): Read timed out. (read timeout=20)
+07:01:27 feed FAIL Business Standard (business): 403 Client Error: Forbidden for url: https://www.business-standard.com/rss/home_page_top_stories.rss
+07:01:28 feed ok   ESPNcricinfo (sports): 5 recent items
+07:01:28 feed FAIL The Hindu (sports): 403 Client Error: Forbidden for url: https://www.thehindu.com/sport/feeder/default.rss
+07:01:28 feed ok   Times of India (sports): 7 recent items
+07:01:28 feed ok   Hindustan Times (sports): 9 recent items
+07:01:28 feed FAIL The Hindu (entertainment): 403 Client Error: Forbidden for url: https://www.thehindu.com/entertainment/feeder/default.rss
+07:01:28 feed ok   Hindustan Times (entertainment): 9 recent items
+07:01:29 feed ok   Hindustan Times (auto): 0 recent items
+07:01:29 feed ok   ET Auto (auto): 1 recent items
+07:01:30 feed ok   Hindustan Times (viral): 4 recent items
+07:01:30 feed ok   India Today (viral): 0 recent items
+07:01:30 collected 242 items from 27 feeds
+07:01:30 candidate (3 sources: Hindustan Times, India Today, Times of India): WWE star Bronson Reed dies at the age of 38 of ‘medical complications’; tributes pour in
+07:01:31 gemini gemini-3.8-flash attempt 1: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",     "status": "UNAVAILABLE"   } } 
+07:01:47 gemini gemini-3.8-flash attempt 2: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",     "status": "UNAVAILABLE"   } } 
+07:02:28 gemini gemini-3.8-flash attempt 3: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",     "status": "UNAVAILABLE"   } } 
+07:02:38   image: tragedy-related story — headline card only
+07:02:38   PUBLISHED: WWE Star Bronson Reed Ka 38 Saal Ki Umar Mein Nidhan, Medical Complications Bani Wajah  -> 2026-11-28-0702-wwe-star-bronson-reed-passes-away-age-38.json (products: 0, sensitive: True)
+07:02:38 done: 1 published, 1 tried
